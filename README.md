@@ -11,7 +11,7 @@ evaluated **exactly once**.
 
 | Read this | What it is |
 |---|---|
-| [`paper/main.pdf`](paper/main.pdf) | IEEE-format paper (14 pages); B/W print copy: [`paper/main(bw).pdf`](paper/main(bw).pdf) |
+| [`paper/main.pdf`](paper/main.pdf) | IEEE-format paper (14 pages): [`paper/main.pdf`](paper/main.pdf) |
 | [`reports/final_report.md`](reports/final_report.md) | Complete results, discussion and limitations |
 | [`reports/replication_guide.md`](reports/replication_guide.md) | Step-by-step reproduction, with the reason for each decision |
 | [`docs/literature_survey.pdf`](docs/literature_survey.pdf) | The 15-paper survey the models were taken from |
@@ -174,18 +174,8 @@ Messidor-2 evaluation.
   - Same-grade copies were collapsed to one.
 - **No leakage:** test images were never used for training, tuning, model selection or threshold fitting.
 
-## Citation
-```bibtex
-@misc{krishna2026leakagefree,
-  title  = {Leakage-Free Reproduction and Validation-Selected Ensembling of Deep Learning Models for Five-Class Diabetic Retinopathy Grading},
-  author = {Krishna KP, Akshai and Sait, Mohammed Azhar and Krishna K, Karthik and A, Rohit},
-  year   = {2026},
-  note   = {Preprint}
-}
-```
-
 ## Licence and data terms
-The code is released under the licence in `LICENSE`, if one is added. The datasets and their grades remain under
+The datasets and their grades remain under
 their providers' terms:
 - APTOS and EyePACS: Kaggle competition rules.
 - IDRiD: CC BY 4.0.
