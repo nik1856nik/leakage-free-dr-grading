@@ -1,0 +1,29 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 01 loss 1.0882 acc 0.662 | val acc 0.6908 mF1 0.4510 qwk 0.8483 auc 0.9160 | 126s *
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 02 loss 0.8838 acc 0.741 | val acc 0.7920 mF1 0.5575 qwk 0.8815 auc 0.9313 | 99s *
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 03 loss 0.8148 acc 0.768 | val acc 0.8263 mF1 0.5949 qwk 0.8764 auc 0.9470 | 97s *
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 04 loss 0.7779 acc 0.793 | val acc 0.8092 mF1 0.5299 qwk 0.8747 auc 0.9444 | 97s
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 05 loss 0.7056 acc 0.798 | val acc 0.7958 mF1 0.6346 qwk 0.8604 auc 0.9469 | 98s *
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 06 loss 0.6885 acc 0.807 | val acc 0.8244 mF1 0.5751 qwk 0.8630 auc 0.9525 | 98s
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 07 loss 0.6764 acc 0.813 | val acc 0.8531 mF1 0.7139 qwk 0.9161 auc 0.9554 | 99s *
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 08 loss 0.6556 acc 0.814 | val acc 0.8454 mF1 0.6831 qwk 0.9166 auc 0.9507 | 98s
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 09 loss 0.6139 acc 0.825 | val acc 0.8263 mF1 0.6558 qwk 0.9097 auc 0.9388 | 98s
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 10 loss 0.5896 acc 0.841 | val acc 0.8340 mF1 0.6869 qwk 0.9118 auc 0.9529 | 97s
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 11 loss 0.5754 acc 0.847 | val acc 0.8569 mF1 0.7107 qwk 0.9141 auc 0.9539 | 98s
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 12 loss 0.5464 acc 0.839 | val acc 0.8511 mF1 0.6777 qwk 0.9141 auc 0.9529 | 98s
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 13 loss 0.5118 acc 0.857 | val acc 0.8302 mF1 0.6993 qwk 0.9012 auc 0.9533 | 98s
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 14 loss 0.4832 acc 0.862 | val acc 0.8416 mF1 0.6761 qwk 0.8912 auc 0.9527 | 99s
+[p8_vgg16__aptos__5class__agc_p8_384_s42] ep 15 loss 0.4579 acc 0.870 | val acc 0.8397 mF1 0.6861 qwk 0.8996 auc 0.9512 | 99s
+early stop at epoch 15 (best 7)
+{
+  "run_name": "p8_vgg16__aptos__5class__agc_p8_384_s42",
+  "best_epoch": 7,
+  "train_time_s": 1502.8812818527222,
+  "params": 134289477,
+  "val": {
+    "accuracy": 0.8531,
+    "macro_f1": 0.7139,
+    "qwk": 0.9161,
+    "roc_auc": 0.9554
+  }
+}

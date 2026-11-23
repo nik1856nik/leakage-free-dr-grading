@@ -1,0 +1,10 @@
+[12:56:05] START effb3_se_eyepacs
+[14:59:43] DONE  effb3_se_eyepacs  "macro_f1":0.6156,"qwk":0.815,"roc_auc":0.911
+[14:59:43] START densenet169_eyepacs
+[16:14:01] DONE  densenet169_eyepacs  "macro_f1":0.5794,"qwk":0.7699,"roc_auc":0.8801
+[16:14:01] START resnet50_cnn_eyepacs
+[17:08:23] DONE  resnet50_cnn_eyepacs  "macro_f1":0.5847,"qwk":0.7717,"roc_auc":0.8921
+[17:08:23] START resnet50_rf_eyepacs
+[17:14:05] DONE  resnet50_rf_eyepacs  
+[17:14:05] START inception_v3_eyepacs
+[17:14:36] STOPPED after resnet50 (focus: best model)

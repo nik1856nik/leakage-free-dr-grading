@@ -1,0 +1,26 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[tune__effb3_se__sqrtsamp__aptos] ep 01 loss 1.1567 acc 0.541 | val acc 0.7996 mF1 0.5982 qwk 0.8345 auc 0.9454 | 134s *
+[tune__effb3_se__sqrtsamp__aptos] ep 02 loss 0.7002 acc 0.729 | val acc 0.8321 mF1 0.6768 qwk 0.8799 auc 0.9591 | 45s *
+[tune__effb3_se__sqrtsamp__aptos] ep 03 loss 0.5763 acc 0.770 | val acc 0.7958 mF1 0.5638 qwk 0.8584 auc 0.9541 | 45s
+[tune__effb3_se__sqrtsamp__aptos] ep 04 loss 0.4849 acc 0.805 | val acc 0.8664 mF1 0.7253 qwk 0.9202 auc 0.9588 | 45s *
+[tune__effb3_se__sqrtsamp__aptos] ep 05 loss 0.4367 acc 0.838 | val acc 0.8397 mF1 0.6693 qwk 0.8923 auc 0.9457 | 45s
+[tune__effb3_se__sqrtsamp__aptos] ep 06 loss 0.3484 acc 0.883 | val acc 0.8149 mF1 0.6366 qwk 0.8761 auc 0.9471 | 45s
+[tune__effb3_se__sqrtsamp__aptos] ep 07 loss 0.2892 acc 0.894 | val acc 0.8511 mF1 0.6518 qwk 0.9016 auc 0.9568 | 45s
+[tune__effb3_se__sqrtsamp__aptos] ep 08 loss 0.2260 acc 0.919 | val acc 0.8340 mF1 0.6735 qwk 0.8973 auc 0.9497 | 45s
+[tune__effb3_se__sqrtsamp__aptos] ep 09 loss 0.1841 acc 0.937 | val acc 0.8416 mF1 0.6996 qwk 0.9049 auc 0.9494 | 45s
+[tune__effb3_se__sqrtsamp__aptos] ep 10 loss 0.1352 acc 0.951 | val acc 0.8416 mF1 0.6930 qwk 0.9114 auc 0.9505 | 45s
+[tune__effb3_se__sqrtsamp__aptos] ep 11 loss 0.1354 acc 0.948 | val acc 0.8473 mF1 0.6907 qwk 0.9109 auc 0.9461 | 45s
+[tune__effb3_se__sqrtsamp__aptos] ep 12 loss 0.1126 acc 0.958 | val acc 0.8168 mF1 0.6474 qwk 0.8915 auc 0.9309 | 45s
+early stop at epoch 12 (best 4)
+{
+  "run_name": "tune__effb3_se__sqrtsamp__aptos",
+  "best_epoch": 4,
+  "train_time_s": 630.2852208614349,
+  "params": 11000461,
+  "val": {
+    "accuracy": 0.8664,
+    "macro_f1": 0.7253,
+    "qwk": 0.9202,
+    "roc_auc": 0.9588
+  }
+}

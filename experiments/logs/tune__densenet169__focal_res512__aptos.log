@@ -1,0 +1,35 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[tune__densenet169__focal_res512__aptos] ep 01 loss 0.4462 acc 0.636 | val acc 0.7538 mF1 0.5160 qwk 0.8297 auc 0.8999 | 174s *
+[tune__densenet169__focal_res512__aptos] ep 02 loss 0.3591 acc 0.717 | val acc 0.7863 mF1 0.5935 qwk 0.8548 auc 0.9376 | 65s *
+[tune__densenet169__focal_res512__aptos] ep 03 loss 0.3074 acc 0.756 | val acc 0.8225 mF1 0.6000 qwk 0.8966 auc 0.9436 | 67s *
+[tune__densenet169__focal_res512__aptos] ep 04 loss 0.2918 acc 0.763 | val acc 0.7958 mF1 0.6060 qwk 0.8602 auc 0.9522 | 68s
+[tune__densenet169__focal_res512__aptos] ep 05 loss 0.2628 acc 0.774 | val acc 0.8531 mF1 0.6546 qwk 0.8922 auc 0.9566 | 67s *
+[tune__densenet169__focal_res512__aptos] ep 06 loss 0.2511 acc 0.793 | val acc 0.8492 mF1 0.6917 qwk 0.9048 auc 0.9550 | 67s *
+[tune__densenet169__focal_res512__aptos] ep 07 loss 0.2614 acc 0.793 | val acc 0.8397 mF1 0.6963 qwk 0.9032 auc 0.9604 | 68s *
+[tune__densenet169__focal_res512__aptos] ep 08 loss 0.2243 acc 0.807 | val acc 0.8111 mF1 0.6672 qwk 0.8965 auc 0.9536 | 67s
+[tune__densenet169__focal_res512__aptos] ep 09 loss 0.2267 acc 0.806 | val acc 0.8149 mF1 0.6869 qwk 0.8921 auc 0.9561 | 67s
+[tune__densenet169__focal_res512__aptos] ep 10 loss 0.2165 acc 0.813 | val acc 0.8511 mF1 0.7082 qwk 0.9163 auc 0.9539 | 67s *
+[tune__densenet169__focal_res512__aptos] ep 11 loss 0.2145 acc 0.807 | val acc 0.8607 mF1 0.7077 qwk 0.9126 auc 0.9563 | 68s
+[tune__densenet169__focal_res512__aptos] ep 12 loss 0.2037 acc 0.805 | val acc 0.8511 mF1 0.7119 qwk 0.9253 auc 0.9573 | 68s *
+[tune__densenet169__focal_res512__aptos] ep 13 loss 0.2019 acc 0.816 | val acc 0.8740 mF1 0.7767 qwk 0.9226 auc 0.9643 | 68s *
+[tune__densenet169__focal_res512__aptos] ep 14 loss 0.1964 acc 0.825 | val acc 0.8683 mF1 0.7408 qwk 0.9300 auc 0.9581 | 68s
+[tune__densenet169__focal_res512__aptos] ep 15 loss 0.1761 acc 0.842 | val acc 0.8588 mF1 0.7429 qwk 0.9136 auc 0.9613 | 68s
+[tune__densenet169__focal_res512__aptos] ep 16 loss 0.1795 acc 0.837 | val acc 0.8721 mF1 0.7506 qwk 0.9307 auc 0.9607 | 68s
+[tune__densenet169__focal_res512__aptos] ep 17 loss 0.1637 acc 0.840 | val acc 0.8511 mF1 0.7166 qwk 0.9149 auc 0.9496 | 68s
+[tune__densenet169__focal_res512__aptos] ep 18 loss 0.1576 acc 0.856 | val acc 0.8760 mF1 0.7759 qwk 0.9192 auc 0.9634 | 68s
+[tune__densenet169__focal_res512__aptos] ep 19 loss 0.1550 acc 0.860 | val acc 0.8454 mF1 0.7228 qwk 0.9133 auc 0.9516 | 68s
+[tune__densenet169__focal_res512__aptos] ep 20 loss 0.1446 acc 0.857 | val acc 0.8740 mF1 0.7570 qwk 0.9323 auc 0.9521 | 69s
+[tune__densenet169__focal_res512__aptos] ep 21 loss 0.1286 acc 0.871 | val acc 0.8645 mF1 0.7359 qwk 0.9321 auc 0.9531 | 69s
+early stop at epoch 21 (best 13)
+{
+  "run_name": "tune__densenet169__focal_res512__aptos",
+  "best_epoch": 13,
+  "train_time_s": 1528.2693929672241,
+  "params": 12492805,
+  "val": {
+    "accuracy": 0.874,
+    "macro_f1": 0.7767,
+    "qwk": 0.9226,
+    "roc_auc": 0.9643
+  }
+}

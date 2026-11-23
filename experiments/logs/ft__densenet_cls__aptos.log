@@ -1,0 +1,29 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+init_from: <All keys matched successfully>
+/home/karthii/Desktop/idse/letsdo/DR_Detection/src/training/engine.py:221: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  sched.step()
+[ft__densenet_cls__aptos] ep 01 loss 0.3471 acc 0.755 | val acc 0.8435 mF1 0.6903 qwk 0.9281 auc 0.9148 | 104s *
+[ft__densenet_cls__aptos] ep 02 loss 0.2357 acc 0.810 | val acc 0.8607 mF1 0.7281 qwk 0.9282 auc 0.9537 | 33s *
+[ft__densenet_cls__aptos] ep 03 loss 0.2195 acc 0.821 | val acc 0.8569 mF1 0.7056 qwk 0.9148 auc 0.9603 | 36s
+[ft__densenet_cls__aptos] ep 04 loss 0.2016 acc 0.831 | val acc 0.8416 mF1 0.6935 qwk 0.8992 auc 0.9539 | 35s
+[ft__densenet_cls__aptos] ep 05 loss 0.1917 acc 0.827 | val acc 0.8588 mF1 0.7311 qwk 0.9284 auc 0.9578 | 36s *
+[ft__densenet_cls__aptos] ep 06 loss 0.1879 acc 0.833 | val acc 0.8683 mF1 0.7358 qwk 0.9258 auc 0.9588 | 36s *
+[ft__densenet_cls__aptos] ep 07 loss 0.1762 acc 0.840 | val acc 0.8550 mF1 0.7230 qwk 0.9226 auc 0.9600 | 35s
+[ft__densenet_cls__aptos] ep 08 loss 0.1666 acc 0.846 | val acc 0.8473 mF1 0.7016 qwk 0.9221 auc 0.9573 | 35s
+[ft__densenet_cls__aptos] ep 09 loss 0.1594 acc 0.857 | val acc 0.8588 mF1 0.7243 qwk 0.9185 auc 0.9593 | 36s
+[ft__densenet_cls__aptos] ep 10 loss 0.1488 acc 0.854 | val acc 0.8531 mF1 0.7159 qwk 0.9137 auc 0.9576 | 36s
+[ft__densenet_cls__aptos] ep 11 loss 0.1502 acc 0.860 | val acc 0.8550 mF1 0.7225 qwk 0.9161 auc 0.9584 | 36s
+[ft__densenet_cls__aptos] ep 12 loss 0.1425 acc 0.861 | val acc 0.8550 mF1 0.7226 qwk 0.9144 auc 0.9591 | 35s
+early stop at epoch 12 (best 6)
+{
+  "run_name": "ft__densenet_cls__aptos",
+  "best_epoch": 6,
+  "train_time_s": 494.3488600254059,
+  "params": 12492805,
+  "val": {
+    "accuracy": 0.8683,
+    "macro_f1": 0.7358,
+    "qwk": 0.9258,
+    "roc_auc": 0.9588
+  }
+}

@@ -1,0 +1,53 @@
+[17:14:45] START resnet50_cls
+[17:21:01] DONE  resnet50_cls "macro_f1":0.732,"qwk":0.9182,
+[17:21:01] START resnet50_reg
+[17:25:37] DONE  resnet50_reg "macro_f1":0.6779,"qwk":0.922,
+[17:25:37] START densenet_cls
+[17:34:05] DONE  densenet_cls "macro_f1":0.7358,"qwk":0.9258,
+[17:34:05] START densenet_reg
+[17:44:19] DONE  densenet_reg "macro_f1":0.6959,"qwk":0.9378,
+[17:44:19] START effb3_cls
+[17:55:51] DONE  effb3_cls "macro_f1":0.7481,"qwk":0.9286,
+[17:55:51] START effb3_reg
+[18:11:14] DONE  effb3_reg "macro_f1":0.6605,"qwk":0.9332,
+[18:11:14] SELECTION
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+top candidates by validation score 0.5*(QWK+macroF1)  [thr = cross-fitted thresholds, argmax = mean probs]:
+  0.8766  argmax ft__effb3_cls__aptos + ft__resnet50_reg__aptos + resnet50_rf__aptos__5class__raw_384_s42
+  0.8740  argmax ft__densenet_reg__aptos + ft__effb3_cls__aptos + tune__densenet169__focal__aptos + tune__effb3_se__res512__aptos
+  0.8732  argmax ft__effb3_cls__aptos + ft__resnet50_reg__aptos + resnet50_rf__aptos__5class__raw_384_s42 + tune__densenet169__focal__aptos
+  0.8732  argmax ft__densenet_reg__aptos + ft__effb3_reg__aptos + tune__densenet169__focal__aptos
+  0.8731  argmax ft__densenet_reg__aptos + ft__effb3_cls__aptos + resnet50_rf__aptos__5class__raw_384_s42 + tune__effb3_se__res512__aptos
+  0.8730  argmax ft__densenet_reg__aptos + ft__effb3_cls__aptos + ft__effb3_reg__aptos + ft__resnet50_reg__aptos
+  0.8730  argmax ft__effb3_cls__aptos + resnet50_rf__aptos__5class__raw_384_s42
+  0.8728  thr    ft__effb3_cls__aptos + ft__effb3_reg__aptos + resnet50_rf__aptos__5class__raw_384_s42 + tune__densenet169__focal__aptos
+  0.8727  argmax ft__effb3_reg__aptos + resnet50_rf__aptos__5class__raw_384_s42 + tune__densenet169__focal__aptos
+  0.8711  argmax ft__effb3_cls__aptos + resnet50_rf__aptos__5class__raw_384_s42 + tune__densenet169__focal__aptos + tune__effb3_se__res512__aptos
+  0.8710  argmax ft__densenet_reg__aptos + ft__effb3_cls__aptos + tune__densenet169__focal__aptos
+  0.8707  argmax ft__densenet_reg__aptos + ft__resnet50_cls__aptos + tune__densenet169__focal__aptos + tune__effb3_se__res512__aptos
+  0.8706  argmax ft__densenet_cls__aptos + ft__densenet_reg__aptos + ft__effb3_cls__aptos + ft__effb3_reg__aptos
+  0.8698  argmax ft__densenet_cls__aptos + ft__densenet_reg__aptos + ft__effb3_cls__aptos + tune__effb3_se__res512__aptos
+  0.8697  argmax ft__densenet_cls__aptos + ft__effb3_cls__aptos + ft__resnet50_reg__aptos + resnet50_rf__aptos__5class__raw_384_s42
+single models:
+  0.8546  thr    resnet50_rf__aptos__5class__raw_384_s42
+  0.8492  argmax tune__densenet169__focal__aptos
+  0.8452  thr    tune__densenet169__focal__aptos
+  0.8404  thr    ft__effb3_cls__aptos
+  0.8381  argmax tune__effb3_se__res512__aptos
+  0.8373  argmax resnet50_rf__aptos__5class__raw_384_s42
+  0.8355  argmax ft__densenet_cls__aptos
+  0.8354  argmax ft__effb3_cls__aptos
+  0.8350  thr    tune__effb3_se__res512__aptos
+  0.8282  argmax ft__resnet50_cls__aptos
+  0.8243  argmax ft__densenet_reg__aptos
+  0.8176  thr    ft__effb3_reg__aptos
+  0.8153  thr    ft__densenet_cls__aptos
+  0.8121  thr    ft__densenet_reg__aptos
+  0.8108  argmax ft__effb3_reg__aptos
+  0.8099  thr    ft__resnet50_cls__aptos
+  0.7929  thr    ft__resnet50_reg__aptos
+  0.7868  argmax ft__resnet50_reg__aptos
+
+SELECTED (3 members, decision: argmax): ft__effb3_cls__aptos + ft__resnet50_reg__aptos + resnet50_rf__aptos__5class__raw_384_s42
+  val (cross-fitted): acc 0.9008  QWK 0.9438  macro-F1 0.8093  AUC 0.9697  referable sens 0.946 spec 0.941
+[18:15:25] BEST PIPELINE FINISHED (validation only; run --final once to test)

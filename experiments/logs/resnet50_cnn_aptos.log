@@ -1,0 +1,33 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[resnet50_rf__aptos__5class__raw_384_s42] ep 01 loss 1.0469 acc 0.667 | val acc 0.6641 mF1 0.3878 qwk 0.6391 auc 0.8910 | 61s *
+[resnet50_rf__aptos__5class__raw_384_s42] ep 02 loss 0.9006 acc 0.734 | val acc 0.8263 mF1 0.5865 qwk 0.8760 auc 0.9358 | 30s *
+[resnet50_rf__aptos__5class__raw_384_s42] ep 03 loss 0.8400 acc 0.751 | val acc 0.8397 mF1 0.5977 qwk 0.8897 auc 0.9421 | 31s *
+[resnet50_rf__aptos__5class__raw_384_s42] ep 04 loss 0.7513 acc 0.786 | val acc 0.7615 mF1 0.5416 qwk 0.8555 auc 0.9065 | 31s
+[resnet50_rf__aptos__5class__raw_384_s42] ep 05 loss 0.7458 acc 0.783 | val acc 0.8416 mF1 0.6273 qwk 0.9055 auc 0.9487 | 31s *
+[resnet50_rf__aptos__5class__raw_384_s42] ep 06 loss 0.7101 acc 0.796 | val acc 0.8664 mF1 0.7376 qwk 0.9096 auc 0.9530 | 31s *
+[resnet50_rf__aptos__5class__raw_384_s42] ep 07 loss 0.6750 acc 0.794 | val acc 0.8492 mF1 0.6672 qwk 0.8974 auc 0.9526 | 31s
+[resnet50_rf__aptos__5class__raw_384_s42] ep 08 loss 0.6608 acc 0.808 | val acc 0.8435 mF1 0.6457 qwk 0.9020 auc 0.9535 | 31s
+[resnet50_rf__aptos__5class__raw_384_s42] ep 09 loss 0.6156 acc 0.829 | val acc 0.7786 mF1 0.6286 qwk 0.8863 auc 0.9597 | 31s
+[resnet50_rf__aptos__5class__raw_384_s42] ep 10 loss 0.6186 acc 0.821 | val acc 0.8416 mF1 0.6915 qwk 0.8985 auc 0.9605 | 31s
+[resnet50_rf__aptos__5class__raw_384_s42] ep 11 loss 0.5923 acc 0.828 | val acc 0.8664 mF1 0.7273 qwk 0.9206 auc 0.9594 | 32s *
+[resnet50_rf__aptos__5class__raw_384_s42] ep 12 loss 0.5484 acc 0.850 | val acc 0.8702 mF1 0.7214 qwk 0.9258 auc 0.9601 | 32s
+[resnet50_rf__aptos__5class__raw_384_s42] ep 13 loss 0.5443 acc 0.854 | val acc 0.8626 mF1 0.7230 qwk 0.9189 auc 0.9606 | 31s
+[resnet50_rf__aptos__5class__raw_384_s42] ep 14 loss 0.5199 acc 0.853 | val acc 0.8607 mF1 0.7106 qwk 0.9263 auc 0.9643 | 31s
+[resnet50_rf__aptos__5class__raw_384_s42] ep 15 loss 0.4900 acc 0.865 | val acc 0.8760 mF1 0.7636 qwk 0.9283 auc 0.9685 | 31s *
+[resnet50_rf__aptos__5class__raw_384_s42] ep 16 loss 0.4689 acc 0.870 | val acc 0.8702 mF1 0.7375 qwk 0.9253 auc 0.9646 | 31s
+[resnet50_rf__aptos__5class__raw_384_s42] ep 17 loss 0.4533 acc 0.875 | val acc 0.8721 mF1 0.7603 qwk 0.9260 auc 0.9649 | 31s
+[resnet50_rf__aptos__5class__raw_384_s42] ep 18 loss 0.4479 acc 0.875 | val acc 0.8836 mF1 0.7714 qwk 0.9339 auc 0.9660 | 31s *
+[resnet50_rf__aptos__5class__raw_384_s42] ep 19 loss 0.4225 acc 0.882 | val acc 0.8779 mF1 0.7512 qwk 0.9313 auc 0.9665 | 31s
+[resnet50_rf__aptos__5class__raw_384_s42] ep 20 loss 0.4224 acc 0.879 | val acc 0.8874 mF1 0.7734 qwk 0.9365 auc 0.9666 | 31s *
+{
+  "run_name": "resnet50_rf__aptos__5class__raw_384_s42",
+  "best_epoch": 20,
+  "train_time_s": 653.6639678478241,
+  "params": 23518277,
+  "val": {
+    "accuracy": 0.8874,
+    "macro_f1": 0.7734,
+    "qwk": 0.9365,
+    "roc_auc": 0.9666
+  }
+}

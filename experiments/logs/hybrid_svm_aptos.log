@@ -1,0 +1,55 @@
+train: X (2437, 2000)  (1.7 ms/img feature extraction)
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+val: X (524, 2000)  (2.3 ms/img feature extraction)
+  {'kernel': 'linear', 'C': 0.01, 'class_weight': None}  val acc 0.8073 mF1 0.5369 qwk 0.8477 -> 0.6923
+  {'kernel': 'linear', 'C': 0.01, 'class_weight': 'balanced'}  val acc 0.8073 mF1 0.5559 qwk 0.8476 -> 0.7018
+  {'kernel': 'linear', 'C': 0.1, 'class_weight': None}  val acc 0.7939 mF1 0.5184 qwk 0.8310 -> 0.6747
+  {'kernel': 'linear', 'C': 0.1, 'class_weight': 'balanced'}  val acc 0.7958 mF1 0.5235 qwk 0.8315 -> 0.6775
+  {'kernel': 'linear', 'C': 1, 'class_weight': None}  val acc 0.7958 mF1 0.5235 qwk 0.8315 -> 0.6775
+  {'kernel': 'linear', 'C': 1, 'class_weight': 'balanced'}  val acc 0.7958 mF1 0.5235 qwk 0.8315 -> 0.6775
+  {'kernel': 'linear', 'C': 10, 'class_weight': None}  val acc 0.7958 mF1 0.5235 qwk 0.8315 -> 0.6775
+  {'kernel': 'linear', 'C': 10, 'class_weight': 'balanced'}  val acc 0.7958 mF1 0.5235 qwk 0.8315 -> 0.6775
+  {'kernel': 'rbf', 'C': 0.01, 'class_weight': None}  val acc 0.8073 mF1 0.5779 qwk 0.8501 -> 0.7140
+  {'kernel': 'rbf', 'C': 0.01, 'class_weight': 'balanced'}  val acc 0.7156 mF1 0.3156 qwk 0.7349 -> 0.5252
+  {'kernel': 'rbf', 'C': 0.1, 'class_weight': None}  val acc 0.8092 mF1 0.5795 qwk 0.8521 -> 0.7158
+  {'kernel': 'rbf', 'C': 0.1, 'class_weight': 'balanced'}  val acc 0.7996 mF1 0.5287 qwk 0.8323 -> 0.6805
+  {'kernel': 'rbf', 'C': 1, 'class_weight': None}  val acc 0.8244 mF1 0.5929 qwk 0.8641 -> 0.7285
+  {'kernel': 'rbf', 'C': 1, 'class_weight': 'balanced'}  val acc 0.8187 mF1 0.5671 qwk 0.8564 -> 0.7117
+  {'kernel': 'rbf', 'C': 10, 'class_weight': None}  val acc 0.8034 mF1 0.5253 qwk 0.8576 -> 0.6914
+  {'kernel': 'rbf', 'C': 10, 'class_weight': 'balanced'}  val acc 0.8034 mF1 0.5253 qwk 0.8576 -> 0.6914
+best: {'kernel': 'rbf', 'C': 1, 'class_weight': None}
+{"run_name": "hybrid_svm__aptos__5class", "classifier_params": {"kernel": "rbf", "C": 1, "class_weight": null}}
+val {'accuracy': 0.8244, 'macro_f1': 0.5929, 'qwk': 0.8641, 'roc_auc': 0.936}

@@ -1,0 +1,104 @@
+{
+  "n": 1740,
+  "accuracy": 0.7419540229885058,
+  "macro_precision": 0.6401312091931164,
+  "macro_recall": 0.6363291880800107,
+  "macro_f1": 0.6147215442434295,
+  "weighted_f1": 0.7102525194119618,
+  "macro_specificity": 0.9074986981595288,
+  "roc_auc": 0.8760971082037164,
+  "qwk": 0.7850063271776616,
+  "confusion_matrix": [
+    [
+      920,
+      21,
+      74,
+      0,
+      2
+    ],
+    [
+      186,
+      37,
+      43,
+      1,
+      1
+    ],
+    [
+      36,
+      23,
+      251,
+      34,
+      1
+    ],
+    [
+      0,
+      0,
+      7,
+      63,
+      5
+    ],
+    [
+      1,
+      0,
+      5,
+      9,
+      20
+    ]
+  ],
+  "per_class": {
+    "No DR": {
+      "precision": 0.8048993875765529,
+      "recall": 0.904621435594887,
+      "f1": 0.8518518518518519,
+      "specificity": 0.6915629322268326,
+      "support": 1017
+    },
+    "Mild": {
+      "precision": 0.4567901234567901,
+      "recall": 0.13805970149253732,
+      "f1": 0.21203438395415472,
+      "specificity": 0.970108695652174,
+      "support": 268
+    },
+    "Moderate": {
+      "precision": 0.6605263157894737,
+      "recall": 0.7275362318840579,
+      "f1": 0.6924137931034483,
+      "specificity": 0.9075268817204301,
+      "support": 345
+    },
+    "Severe": {
+      "precision": 0.5887850467289719,
+      "recall": 0.84,
+      "f1": 0.6923076923076923,
+      "specificity": 0.9735735735735735,
+      "support": 75
+    },
+    "PDR": {
+      "precision": 0.6896551724137931,
+      "recall": 0.5714285714285714,
+      "f1": 0.625,
+      "specificity": 0.9947214076246335,
+      "support": 35
+    }
+  },
+  "majority_baseline_acc": 0.5844827586206897,
+  "anyDR_sensitivity": 0.6915629322268326,
+  "anyDR_specificity": 0.904621435594887,
+  "anyDR_auc": 0.8517838515635306,
+  "anyDR_false_negatives": 223,
+  "referable_sensitivity": 0.8681318681318682,
+  "referable_specificity": 0.9058365758754864,
+  "referable_auc": 0.9527498182751103,
+  "referable_false_negatives": 60,
+  "sensitivity": 0.6363291880800107,
+  "specificity": 0.9074986981595288,
+  "inference_ms_per_image": 5.575520005719415,
+  "train_dataset": "eyepacs",
+  "eval_dataset": "messidor2",
+  "eval_split": "all",
+  "tta": 0,
+  "model": "densenet169",
+  "run_name": "densenet169__eyepacs__5class__raw_384_s42",
+  "task": "5class"
+}

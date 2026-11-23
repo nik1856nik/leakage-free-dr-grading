@@ -1,0 +1,33 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[tune__resnet50_rf__focal__aptos] ep 01 loss 0.4290 acc 0.657 | val acc 0.6679 mF1 0.4150 qwk 0.7730 auc 0.8796 | 61s *
+[tune__resnet50_rf__focal__aptos] ep 02 loss 0.3375 acc 0.725 | val acc 0.8187 mF1 0.6163 qwk 0.8697 auc 0.9379 | 30s *
+[tune__resnet50_rf__focal__aptos] ep 03 loss 0.2956 acc 0.755 | val acc 0.8378 mF1 0.5998 qwk 0.8980 auc 0.9448 | 32s *
+[tune__resnet50_rf__focal__aptos] ep 04 loss 0.2544 acc 0.778 | val acc 0.8187 mF1 0.6181 qwk 0.8751 auc 0.9349 | 31s
+[tune__resnet50_rf__focal__aptos] ep 05 loss 0.2473 acc 0.792 | val acc 0.8149 mF1 0.6675 qwk 0.8752 auc 0.9462 | 31s *
+[tune__resnet50_rf__focal__aptos] ep 06 loss 0.2491 acc 0.782 | val acc 0.8359 mF1 0.6831 qwk 0.9035 auc 0.9524 | 31s *
+[tune__resnet50_rf__focal__aptos] ep 07 loss 0.2317 acc 0.792 | val acc 0.8435 mF1 0.6752 qwk 0.9066 auc 0.9518 | 31s
+[tune__resnet50_rf__focal__aptos] ep 08 loss 0.2240 acc 0.794 | val acc 0.8626 mF1 0.7168 qwk 0.9179 auc 0.9600 | 32s *
+[tune__resnet50_rf__focal__aptos] ep 09 loss 0.2115 acc 0.815 | val acc 0.8111 mF1 0.6878 qwk 0.8933 auc 0.9629 | 31s
+[tune__resnet50_rf__focal__aptos] ep 10 loss 0.1963 acc 0.827 | val acc 0.8511 mF1 0.7210 qwk 0.8978 auc 0.9562 | 31s
+[tune__resnet50_rf__focal__aptos] ep 11 loss 0.1996 acc 0.815 | val acc 0.8588 mF1 0.7399 qwk 0.9223 auc 0.9538 | 31s *
+[tune__resnet50_rf__focal__aptos] ep 12 loss 0.1754 acc 0.845 | val acc 0.8550 mF1 0.7142 qwk 0.9182 auc 0.9510 | 31s
+[tune__resnet50_rf__focal__aptos] ep 13 loss 0.1762 acc 0.850 | val acc 0.8702 mF1 0.7475 qwk 0.9311 auc 0.9600 | 32s *
+[tune__resnet50_rf__focal__aptos] ep 14 loss 0.1613 acc 0.846 | val acc 0.8760 mF1 0.7397 qwk 0.9224 auc 0.9640 | 31s
+[tune__resnet50_rf__focal__aptos] ep 15 loss 0.1479 acc 0.868 | val acc 0.8874 mF1 0.7743 qwk 0.9324 auc 0.9643 | 31s *
+[tune__resnet50_rf__focal__aptos] ep 16 loss 0.1433 acc 0.861 | val acc 0.8798 mF1 0.7721 qwk 0.9283 auc 0.9603 | 31s
+[tune__resnet50_rf__focal__aptos] ep 17 loss 0.1311 acc 0.878 | val acc 0.8817 mF1 0.7757 qwk 0.9292 auc 0.9608 | 31s
+[tune__resnet50_rf__focal__aptos] ep 18 loss 0.1253 acc 0.874 | val acc 0.8798 mF1 0.7732 qwk 0.9272 auc 0.9609 | 31s
+[tune__resnet50_rf__focal__aptos] ep 19 loss 0.1191 acc 0.880 | val acc 0.8760 mF1 0.7690 qwk 0.9244 auc 0.9631 | 31s
+[tune__resnet50_rf__focal__aptos] ep 20 loss 0.1155 acc 0.885 | val acc 0.8836 mF1 0.7748 qwk 0.9280 auc 0.9626 | 31s
+{
+  "run_name": "tune__resnet50_rf__focal__aptos",
+  "best_epoch": 15,
+  "train_time_s": 654.2358493804932,
+  "params": 23518277,
+  "val": {
+    "accuracy": 0.8874,
+    "macro_f1": 0.7743,
+    "qwk": 0.9324,
+    "roc_auc": 0.9643
+  }
+}

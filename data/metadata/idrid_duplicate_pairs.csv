@@ -1,0 +1,7 @@
+uid_a,uid_b,corr,label_a,label_b
+idrid/train_IDRiD_021,idrid/train_IDRiD_391,0.9995,1,2
+idrid/train_IDRiD_028,idrid/train_IDRiD_327,1.0,4,3
+idrid/train_IDRiD_045,idrid/train_IDRiD_333,1.0,2,2
+idrid/train_IDRiD_073,idrid/train_IDRiD_375,1.0,2,2
+idrid/train_IDRiD_079,idrid/train_IDRiD_279,1.0,1,1
+idrid/train_IDRiD_118,idrid/test_IDRiD_064,1.0,0,3

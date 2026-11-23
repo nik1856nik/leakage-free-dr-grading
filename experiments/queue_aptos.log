@@ -1,0 +1,23 @@
+[02:28:54] START effb3_se_aptos
+[02:44:10] DONE  effb3_se_aptos  "macro_f1":0.7368,"qwk":0.9256,
+[02:44:10] START inception_v3_aptos
+[02:52:04] DONE  inception_v3_aptos  "macro_f1":0.7321,"qwk":0.9173,
+[02:52:04] START densenet169_aptos
+[03:13:50] DONE  densenet169_aptos  "macro_f1":0.7644,"qwk":0.9327,
+[03:13:50] START resnet50_cnn_aptos
+[03:24:52] DONE  resnet50_cnn_aptos  "macro_f1":0.7734,"qwk":0.9365,
+[03:24:52] START resnet50_rf_aptos
+[03:25:23] DONE  resnet50_rf_aptos  
+[03:25:23] START hybrid_svm_aptos
+[03:28:58] DONE  hybrid_svm_aptos  
+[03:28:58] START light2stage_aptos
+[03:36:25] DONE  light2stage_aptos  
+[03:36:25] START mscnn_lstm_aptos
+[03:42:02] DONE  mscnn_lstm_aptos  "macro_f1":0.45,"qwk":0.8198,
+[03:42:02] START vit_b16_aptos
+[03:56:07] DONE  vit_b16_aptos  "macro_f1":0.727,"qwk":0.9103,
+[03:56:07] START p8_vgg16_aptos
+[04:21:23] DONE  p8_vgg16_aptos  "macro_f1":0.7139,"qwk":0.9161,
+[04:21:23] START mil_resnet18_aptos
+[05:01:39] DONE  mil_resnet18_aptos  "macro_f1":0.6947,"qwk":0.8896,
+[05:01:39] QUEUE FINISHED

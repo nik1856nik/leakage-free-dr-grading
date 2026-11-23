@@ -1,0 +1,23 @@
+# Dataset definitions. Grades: ICDR 0 No DR, 1 Mild, 2 Moderate, 3 Severe, 4 PDR.
+seed: 42
+cache_size: 512            # retina-cropped, square-padded, JPEG q95 4:4:4
+duplicates: {method: green-channel high-pass correlation on 96 px thumbnails, region: central 80% radius, threshold: 0.99,
+             policy: [official test sets never modified, conflicting-label copies excluded, same-label copies reduced to one, all copies share a leakage group]}
+split: {train: 0.70, val: 0.15, test: 0.15, method: StratifiedGroupKFold(20) -> 14/3/3 folds}
+datasets:
+  aptos:
+    source: https://www.kaggle.com/competitions/aptos2019-blindness-detection
+    labels: train.csv (id_code, diagnosis); test labels are private -> only train used
+    groups: near-duplicate clusters (green high-pass corr >= 0.99 inside the central 80% of the retina disc); no patient ids
+  eyepacs:
+    source: https://www.kaggle.com/competitions/diabetic-retinopathy-detection
+    labels: trainLabels.csv (image, level); train split only (35,126 images)
+    groups: patient id (both eyes together) U near-duplicate clusters
+  messidor2:
+    source: images https://www.adcis.net/en/third-party/messidor2/ ; grades Kaggle google-brain/messidor2-dr-grades
+    labels: Krause et al. 2018 adjudicated ICDR grade, referable DME, gradability (4 ungradable excluded)
+    groups: exam (left/right pair from messidor-2.csv) U near-duplicate clusters
+  idrid:
+    source: https://idrid.grand-challenge.org/ (Disease Grading, CC-BY-4.0)
+    labels: official train (413) / test (103); validation carved from official train
+    groups: near-duplicate clusters

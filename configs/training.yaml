@@ -1,0 +1,12 @@
+# Shared training protocol (per-model settings in models.yaml).
+seed: 42
+mixed_precision: fp16 autocast + GradScaler
+grad_clip: 5.0
+early_stopping: {patience: 8, monitor: "0.5*(QWK + macro-F1) on validation (multiclass); ROC-AUC (binary)"}
+class_imbalance: {default: "weighted CE, weights = (N/n_k)^0.5 normalised", alternatives: [focal, sqrt-sampler]}
+augmentation:
+  standard: [hflip, vflip, rotate +-180, scale 0.9-1.1, translate 3%, brightness/contrast 0.15]
+  geometric: [hflip, vflip, rotate, scale, translate]
+  strong: standard + [HSV jitter, light blur, coarse dropout]
+  note: on-the-fly, training images only, after splitting (never pre-split augmentation)
+test_set_policy: never used for model selection or tuning; evaluated once per final config with --final

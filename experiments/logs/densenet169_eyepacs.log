@@ -1,0 +1,25 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[densenet169__eyepacs__5class__raw_384_s42] ep 01 loss 0.2780 acc 0.678 | val acc 0.6707 mF1 0.3089 qwk 0.3125 auc 0.7070 | 410s *
+[densenet169__eyepacs__5class__raw_384_s42] ep 02 loss 0.2521 acc 0.722 | val acc 0.7629 mF1 0.4273 qwk 0.5570 auc 0.8034 | 364s *
+[densenet169__eyepacs__5class__raw_384_s42] ep 03 loss 0.2354 acc 0.734 | val acc 0.7175 mF1 0.4553 qwk 0.5839 auc 0.8055 | 364s *
+[densenet169__eyepacs__5class__raw_384_s42] ep 04 loss 0.2218 acc 0.753 | val acc 0.7883 mF1 0.4935 qwk 0.6899 auc 0.8301 | 364s *
+[densenet169__eyepacs__5class__raw_384_s42] ep 05 loss 0.2099 acc 0.765 | val acc 0.7874 mF1 0.4762 qwk 0.6335 auc 0.8418 | 364s
+[densenet169__eyepacs__5class__raw_384_s42] ep 06 loss 0.1990 acc 0.773 | val acc 0.8050 mF1 0.4893 qwk 0.6947 auc 0.8517 | 364s *
+[densenet169__eyepacs__5class__raw_384_s42] ep 07 loss 0.1895 acc 0.784 | val acc 0.7938 mF1 0.5361 qwk 0.7301 auc 0.8546 | 363s *
+[densenet169__eyepacs__5class__raw_384_s42] ep 08 loss 0.1768 acc 0.796 | val acc 0.8238 mF1 0.5466 qwk 0.7365 auc 0.8732 | 365s *
+[densenet169__eyepacs__5class__raw_384_s42] ep 09 loss 0.1697 acc 0.803 | val acc 0.8233 mF1 0.5679 qwk 0.7479 auc 0.8714 | 365s *
+[densenet169__eyepacs__5class__raw_384_s42] ep 10 loss 0.1594 acc 0.812 | val acc 0.8221 mF1 0.5794 qwk 0.7699 auc 0.8801 | 364s *
+[densenet169__eyepacs__5class__raw_384_s42] ep 11 loss 0.1551 acc 0.815 | val acc 0.8073 mF1 0.5687 qwk 0.7527 auc 0.8800 | 364s
+[densenet169__eyepacs__5class__raw_384_s42] ep 12 loss 0.1527 acc 0.817 | val acc 0.8244 mF1 0.5741 qwk 0.7653 auc 0.8814 | 364s
+{
+  "run_name": "densenet169__eyepacs__5class__raw_384_s42",
+  "best_epoch": 10,
+  "train_time_s": 4415.854610919952,
+  "params": 12492805,
+  "val": {
+    "accuracy": 0.8221,
+    "macro_f1": 0.5794,
+    "qwk": 0.7699,
+    "roc_auc": 0.8801
+  }
+}

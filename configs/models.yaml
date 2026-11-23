@@ -1,0 +1,65 @@
+# Per-model defaults. `source` says where each setting comes from:
+#   paper   = stated in the (verified or survey-described) original paper
+#   ours    = not stated by the authors; our documented choice
+# Command-line flags to scripts/train.py override these.
+
+effb3_se:          # P4 Dixit & Jha 2025 (survey-only)
+  paper: P4
+  source: "arch: paper, preprocessing: paper (crop + Gaussian blur), dropout: paper (0.5), optimizer: ours, lr: ours, size: ours (P4 used 256)"
+  train: {model: effb3_se, size: 384, enhancement: ben_graham, optimizer: adamw, lr: 3.0e-4,
+          weight_decay: 1.0e-4, batch_size: 16, epochs: 30, loss: wce, scheduler: cosine}
+
+inception_v3:      # P7 Gulshan 2016 (verified)
+  paper: P7
+  source: "arch: paper, init: paper (ImageNet), early_stopping: paper, optimizer: ours (P7 used distributed SGD), size: ours (supplement not read), ensembling: paper (10 nets) to studied in ensemble stage"
+  train: {model: inception_v3, size: 384, enhancement: raw, optimizer: adamw, lr: 3.0e-4,
+          weight_decay: 1.0e-4, batch_size: 16, epochs: 30, loss: wce, scheduler: cosine}
+
+densenet169:       # P14 review (survey-only) - baseline with our configuration
+  paper: P14
+  source: "arch: paper, everything_else: ours"
+  train: {model: densenet169, size: 384, enhancement: raw, optimizer: adamw, lr: 3.0e-4,
+          weight_decay: 1.0e-4, batch_size: 12, epochs: 30, loss: wce, scheduler: cosine}
+
+resnet50_rf:       # P11 Yaqoob 2021 (verified); CNN fine-tune stage, RF fitted afterwards
+  paper: P11
+  source: "arch: paper, finetune_epochs: paper (20), dropout: paper (0.2), features: paper (GAP 2048-d), rf: paper (entropy, min_samples_leaf=1, min_samples_split=2, random_state=1), rf_n_estimators: ours (not stated), optimizer: ours, lr: ours, size: ours"
+  train: {model: resnet50_rf, size: 384, enhancement: raw, optimizer: adamw, lr: 3.0e-4,
+          weight_decay: 1.0e-4, batch_size: 16, epochs: 20, patience: 20, loss: wce, scheduler: cosine}
+
+hybrid_svm:        # P6 Butt 2022 (verified): frozen GoogLeNet+ResNet18 FC outputs to SVM
+  paper: P6
+  source: "features: paper (1000+1000 FC outputs, frozen), size: paper (224), classifier: paper (SVM), svm_kernel_C: ours (tuned on validation; not stated)"
+  train: null
+
+light2stage:       # P10 Zafar 2025 (verified)
+  paper: P10
+  source: "input: paper (227), optimizer: paper (SGDM, momentum 0.9), lr: paper (1e-3), batch: paper (128), epochs: paper (100, we add early stopping), two_stage: paper, architecture_widths: ours (layer table only in a figure), augmentation: ours (on-the-fly, train only)"
+  train: {model: light2stage, size: 227, enhancement: raw, optimizer: sgd, lr: 1.0e-3,
+          weight_decay: 1.0e-4, batch_size: 128, epochs: 100, patience: 15, loss: wce,
+          scheduler: none, warmup_epochs: 0}
+
+mil_resnet18:      # P12 Papadopoulos 2021 (verified)
+  paper: P12
+  source: "preprocessing: paper (crop, 512, Graham colour subtraction, zero outer 5%), patches: paper (64x64, K=50 random train, 0.75-overlap grid test, >=50% retina), M: paper (128), L: paper (32), optimizer: paper (Adam), lr: paper (3e-4), epochs: paper (60), batch_size: ours"
+  train: {model: mil_resnet18, size: 512, enhancement: graham_rim, optimizer: adam, lr: 3.0e-4,
+          weight_decay: 0.0, batch_size: 8, epochs: 60, patience: 12, loss: wce, scheduler: none,
+          warmup_epochs: 0, aug: geometric}
+
+p8_vgg16:          # P8 Abbasi 2025 (survey-only; enhancement code verified)
+  paper: P8
+  source: "enhancement: paper code (AGC alpha=0.4 + V-channel CDF equalisation; GAN restoration excluded), backbone: ours (VGG16-BN, closest available to VGG-S), everything_else: ours"
+  train: {model: p8_vgg16, size: 384, enhancement: agc_p8, optimizer: adamw, lr: 1.0e-4,
+          weight_decay: 1.0e-4, batch_size: 12, epochs: 30, loss: wce, scheduler: cosine}
+
+mscnn_lstm:        # P15 Sushith 2025 (survey-only, flagged)
+  paper: P15
+  source: "input: paper (224), preprocessing: paper ([0,1] + CLAHE), lstm: paper (256,128), optimizer: paper (Adam), lr: paper (1e-3), batch: paper (32), dropout: paper (0.5), l2: paper (0.01 to weight_decay), epochs: paper (50), sequence_mapping: ours"
+  train: {model: mscnn_lstm, size: 224, enhancement: clahe, optimizer: adam, lr: 1.0e-3,
+          weight_decay: 1.0e-2, batch_size: 32, epochs: 50, patience: 12, loss: wce, scheduler: cosine}
+
+vit_b16:           # P14 review (survey-only) - baseline with our configuration
+  paper: P14
+  source: "arch: paper (ViT-B/16), everything_else: ours"
+  train: {model: vit_b16, size: 224, enhancement: raw, optimizer: adamw, lr: 5.0e-5,
+          weight_decay: 0.05, batch_size: 16, epochs: 30, loss: wce, scheduler: cosine, warmup_epochs: 2}

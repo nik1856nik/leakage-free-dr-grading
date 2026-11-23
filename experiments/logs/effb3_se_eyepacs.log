@@ -1,0 +1,25 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 01 loss 1.0383 acc 0.750 | val acc 0.8121 mF1 0.4819 qwk 0.6943 auc 0.8742 | 690s *
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 02 loss 0.8173 acc 0.809 | val acc 0.8045 mF1 0.5683 qwk 0.7225 auc 0.8816 | 598s *
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 03 loss 0.7533 acc 0.825 | val acc 0.8278 mF1 0.5912 qwk 0.7557 auc 0.9035 | 597s *
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 04 loss 0.7181 acc 0.834 | val acc 0.8341 mF1 0.5839 qwk 0.7477 auc 0.9061 | 601s
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 05 loss 0.6779 acc 0.843 | val acc 0.8326 mF1 0.6051 qwk 0.7837 auc 0.9082 | 598s *
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 06 loss 0.6420 acc 0.849 | val acc 0.8510 mF1 0.6249 qwk 0.7953 auc 0.9139 | 598s *
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 07 loss 0.5963 acc 0.859 | val acc 0.8164 mF1 0.6018 qwk 0.7718 auc 0.9083 | 597s
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 08 loss 0.5486 acc 0.866 | val acc 0.8280 mF1 0.6111 qwk 0.7846 auc 0.9146 | 677s
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 09 loss 0.5001 acc 0.876 | val acc 0.8404 mF1 0.6088 qwk 0.8128 auc 0.9128 | 600s *
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 10 loss 0.4509 acc 0.887 | val acc 0.8303 mF1 0.6156 qwk 0.8150 auc 0.9110 | 595s *
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 11 loss 0.4226 acc 0.891 | val acc 0.8295 mF1 0.6055 qwk 0.8059 auc 0.9074 | 593s
+[effb3_se__eyepacs__5class__ben_graham_512_s42] ep 12 loss 0.4115 acc 0.894 | val acc 0.8324 mF1 0.6120 qwk 0.8113 auc 0.9087 | 596s
+{
+  "run_name": "effb3_se__eyepacs__5class__ben_graham_512_s42",
+  "best_epoch": 10,
+  "train_time_s": 7340.573673963547,
+  "params": 11000461,
+  "val": {
+    "accuracy": 0.8303,
+    "macro_f1": 0.6156,
+    "qwk": 0.815,
+    "roc_auc": 0.911
+  }
+}

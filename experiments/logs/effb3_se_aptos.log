@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 01 loss 1.1918 acc 0.643 | val acc 0.8034 mF1 0.6016 qwk 0.8516 auc 0.9376 | 134s *
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 02 loss 0.7856 acc 0.778 | val acc 0.8359 mF1 0.7001 qwk 0.8704 auc 0.9506 | 45s *
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 03 loss 0.6737 acc 0.806 | val acc 0.8397 mF1 0.7008 qwk 0.9171 auc 0.9541 | 45s *
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 04 loss 0.6066 acc 0.834 | val acc 0.8168 mF1 0.6583 qwk 0.8983 auc 0.9486 | 45s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 05 loss 0.5572 acc 0.833 | val acc 0.8225 mF1 0.6698 qwk 0.8727 auc 0.9506 | 45s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 06 loss 0.4877 acc 0.863 | val acc 0.8397 mF1 0.7208 qwk 0.8985 auc 0.9548 | 46s *
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 07 loss 0.4422 acc 0.876 | val acc 0.8492 mF1 0.6221 qwk 0.9089 auc 0.9467 | 45s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 08 loss 0.3913 acc 0.889 | val acc 0.8397 mF1 0.6662 qwk 0.8898 auc 0.9506 | 45s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 09 loss 0.3367 acc 0.903 | val acc 0.8302 mF1 0.6471 qwk 0.8971 auc 0.9514 | 45s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 10 loss 0.3091 acc 0.919 | val acc 0.8607 mF1 0.7368 qwk 0.9256 auc 0.9627 | 45s *
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 11 loss 0.2555 acc 0.924 | val acc 0.8378 mF1 0.6522 qwk 0.8877 auc 0.9521 | 45s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 12 loss 0.2029 acc 0.949 | val acc 0.8531 mF1 0.7002 qwk 0.9030 auc 0.9528 | 46s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 13 loss 0.1772 acc 0.948 | val acc 0.8244 mF1 0.6729 qwk 0.8939 auc 0.9480 | 46s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 14 loss 0.1129 acc 0.970 | val acc 0.8645 mF1 0.7370 qwk 0.9113 auc 0.9597 | 46s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 15 loss 0.1006 acc 0.968 | val acc 0.8721 mF1 0.7259 qwk 0.9114 auc 0.9566 | 45s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 16 loss 0.0859 acc 0.976 | val acc 0.8626 mF1 0.7170 qwk 0.9091 auc 0.9577 | 45s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 17 loss 0.0635 acc 0.985 | val acc 0.8664 mF1 0.7214 qwk 0.9119 auc 0.9583 | 45s
+[effb3_se__aptos__5class__ben_graham_384_s42] ep 18 loss 0.0467 acc 0.990 | val acc 0.8588 mF1 0.7166 qwk 0.9012 auc 0.9580 | 45s
+early stop at epoch 18 (best 10)
+{
+  "run_name": "effb3_se__aptos__5class__ben_graham_384_s42",
+  "best_epoch": 10,
+  "train_time_s": 901.8056316375732,
+  "params": 11000461,
+  "val": {
+    "accuracy": 0.8607,
+    "macro_f1": 0.7368,
+    "qwk": 0.9256,
+    "roc_auc": 0.9627
+  }
+}

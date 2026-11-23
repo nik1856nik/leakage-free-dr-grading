@@ -1,0 +1,34 @@
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/albumentations/check_version.py:147: UserWarning: Error fetching version info <urlopen error _ssl.c:994: The handshake operation timed out>
+  data = fetch_version_info()
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[tune__densenet169__sqrtsamp__aptos] ep 01 loss 1.0268 acc 0.574 | val acc 0.8073 mF1 0.5763 qwk 0.8826 auc 0.9265 | 149s *
+[tune__densenet169__sqrtsamp__aptos] ep 02 loss 0.7950 acc 0.673 | val acc 0.7252 mF1 0.5616 qwk 0.8155 auc 0.9338 | 39s
+[tune__densenet169__sqrtsamp__aptos] ep 03 loss 0.7385 acc 0.703 | val acc 0.8435 mF1 0.6955 qwk 0.9021 auc 0.9547 | 40s *
+[tune__densenet169__sqrtsamp__aptos] ep 04 loss 0.6405 acc 0.750 | val acc 0.8702 mF1 0.7356 qwk 0.9286 auc 0.9533 | 40s *
+[tune__densenet169__sqrtsamp__aptos] ep 05 loss 0.6475 acc 0.753 | val acc 0.8569 mF1 0.7199 qwk 0.9208 auc 0.9602 | 40s
+[tune__densenet169__sqrtsamp__aptos] ep 06 loss 0.5677 acc 0.773 | val acc 0.8206 mF1 0.6585 qwk 0.9110 auc 0.9533 | 40s
+[tune__densenet169__sqrtsamp__aptos] ep 07 loss 0.6287 acc 0.748 | val acc 0.8492 mF1 0.6998 qwk 0.9013 auc 0.9566 | 40s
+[tune__densenet169__sqrtsamp__aptos] ep 08 loss 0.5656 acc 0.763 | val acc 0.8282 mF1 0.6421 qwk 0.8906 auc 0.9560 | 41s
+[tune__densenet169__sqrtsamp__aptos] ep 09 loss 0.5453 acc 0.786 | val acc 0.8416 mF1 0.7257 qwk 0.9165 auc 0.9591 | 41s
+[tune__densenet169__sqrtsamp__aptos] ep 10 loss 0.5263 acc 0.787 | val acc 0.8550 mF1 0.7541 qwk 0.9287 auc 0.9617 | 41s *
+[tune__densenet169__sqrtsamp__aptos] ep 11 loss 0.4982 acc 0.794 | val acc 0.8645 mF1 0.7338 qwk 0.9111 auc 0.9623 | 40s
+[tune__densenet169__sqrtsamp__aptos] ep 12 loss 0.4453 acc 0.819 | val acc 0.8588 mF1 0.7246 qwk 0.9151 auc 0.9612 | 41s
+[tune__densenet169__sqrtsamp__aptos] ep 13 loss 0.4445 acc 0.823 | val acc 0.8569 mF1 0.6979 qwk 0.9129 auc 0.9543 | 41s
+[tune__densenet169__sqrtsamp__aptos] ep 14 loss 0.4318 acc 0.832 | val acc 0.8645 mF1 0.7213 qwk 0.9298 auc 0.9536 | 41s
+[tune__densenet169__sqrtsamp__aptos] ep 15 loss 0.3923 acc 0.850 | val acc 0.8626 mF1 0.7379 qwk 0.9241 auc 0.9535 | 41s
+[tune__densenet169__sqrtsamp__aptos] ep 16 loss 0.3671 acc 0.863 | val acc 0.8645 mF1 0.7461 qwk 0.9131 auc 0.9560 | 41s
+[tune__densenet169__sqrtsamp__aptos] ep 17 loss 0.3406 acc 0.867 | val acc 0.8626 mF1 0.7548 qwk 0.9195 auc 0.9624 | 41s
+[tune__densenet169__sqrtsamp__aptos] ep 18 loss 0.2843 acc 0.891 | val acc 0.8454 mF1 0.6899 qwk 0.9083 auc 0.9538 | 41s
+early stop at epoch 18 (best 10)
+{
+  "run_name": "tune__densenet169__sqrtsamp__aptos",
+  "best_epoch": 10,
+  "train_time_s": 838.0332849025726,
+  "params": 12492805,
+  "val": {
+    "accuracy": 0.855,
+    "macro_f1": 0.7541,
+    "qwk": 0.9287,
+    "roc_auc": 0.9617
+  }
+}

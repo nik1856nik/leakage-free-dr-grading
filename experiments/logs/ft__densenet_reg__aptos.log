@@ -1,0 +1,28 @@
+init_from: _IncompatibleKeys(missing_keys=['net.classifier.weight', 'net.classifier.bias'], unexpected_keys=[])
+[ft__densenet_reg__aptos] ep 01 loss 0.6447 acc 0.493 | val acc 0.7405 mF1 0.5743 qwk 0.8981 auc 0.9023 | 103s *
+[ft__densenet_reg__aptos] ep 02 loss 0.1774 acc 0.712 | val acc 0.8416 mF1 0.6595 qwk 0.9171 auc 0.9356 | 33s *
+[ft__densenet_reg__aptos] ep 03 loss 0.1612 acc 0.743 | val acc 0.8244 mF1 0.6523 qwk 0.9209 auc 0.9392 | 36s
+[ft__densenet_reg__aptos] ep 04 loss 0.1538 acc 0.758 | val acc 0.8416 mF1 0.6769 qwk 0.9204 auc 0.9478 | 36s *
+[ft__densenet_reg__aptos] ep 05 loss 0.1318 acc 0.781 | val acc 0.8473 mF1 0.6892 qwk 0.9351 auc 0.9384 | 36s *
+[ft__densenet_reg__aptos] ep 06 loss 0.1190 acc 0.791 | val acc 0.8511 mF1 0.6913 qwk 0.9286 auc 0.9357 | 36s
+[ft__densenet_reg__aptos] ep 07 loss 0.1147 acc 0.807 | val acc 0.8302 mF1 0.6809 qwk 0.9254 auc 0.9369 | 35s
+[ft__densenet_reg__aptos] ep 08 loss 0.1083 acc 0.816 | val acc 0.8397 mF1 0.6829 qwk 0.9340 auc 0.9241 | 35s
+[ft__densenet_reg__aptos] ep 09 loss 0.1052 acc 0.816 | val acc 0.8435 mF1 0.6870 qwk 0.9381 auc 0.9263 | 35s *
+[ft__densenet_reg__aptos] ep 10 loss 0.1001 acc 0.826 | val acc 0.8302 mF1 0.6552 qwk 0.9325 auc 0.9206 | 35s
+[ft__densenet_reg__aptos] ep 11 loss 0.0952 acc 0.833 | val acc 0.8454 mF1 0.6958 qwk 0.9348 auc 0.9276 | 36s *
+[ft__densenet_reg__aptos] ep 12 loss 0.0955 acc 0.826 | val acc 0.8550 mF1 0.6913 qwk 0.9269 auc 0.9369 | 35s
+[ft__densenet_reg__aptos] ep 13 loss 0.0958 acc 0.831 | val acc 0.8492 mF1 0.6959 qwk 0.9378 auc 0.9290 | 36s *
+[ft__densenet_reg__aptos] ep 14 loss 0.0957 acc 0.826 | val acc 0.8435 mF1 0.6844 qwk 0.9318 auc 0.9282 | 35s
+[ft__densenet_reg__aptos] ep 15 loss 0.0926 acc 0.831 | val acc 0.8511 mF1 0.6981 qwk 0.9348 auc 0.9275 | 35s
+{
+  "run_name": "ft__densenet_reg__aptos",
+  "best_epoch": 13,
+  "train_time_s": 598.7492752075195,
+  "params": 12486145,
+  "val": {
+    "accuracy": 0.8492,
+    "macro_f1": 0.6959,
+    "qwk": 0.9378,
+    "roc_auc": 0.929
+  }
+}

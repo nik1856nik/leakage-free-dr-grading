@@ -1,0 +1,108 @@
+{
+  "run_name": "resnet50_rf__eyepacs__5class__raw_384_s42",
+  "model": "resnet50_rf",
+  "paper": "P11",
+  "dataset": "eyepacs",
+  "task": "5class",
+  "best_epoch": 12,
+  "best_val_score": 0.6782043855724855,
+  "train_time_s": 3213.56315946579,
+  "params": 23518277,
+  "trainable_params": 23518277,
+  "val": {
+    "n": 5268,
+    "accuracy": 0.8376993166287016,
+    "macro_precision": 0.6279377171999189,
+    "macro_recall": 0.561624989512542,
+    "macro_f1": 0.5846693146510245,
+    "weighted_f1": 0.8203020175982646,
+    "macro_specificity": 0.9162415233533118,
+    "roc_auc": 0.8920712320465085,
+    "qwk": 0.7717394564939465,
+    "confusion_matrix": [
+      [
+        3750,
+        43,
+        60,
+        1,
+        17
+      ],
+      [
+        250,
+        63,
+        53,
+        0,
+        0
+      ],
+      [
+        208,
+        56,
+        475,
+        42,
+        13
+      ],
+      [
+        8,
+        0,
+        54,
+        60,
+        8
+      ],
+      [
+        6,
+        0,
+        23,
+        13,
+        65
+      ]
+    ],
+    "per_class": {
+      "No DR": {
+        "precision": 0.8882046423495974,
+        "recall": 0.968741927150607,
+        "f1": 0.9267268009390831,
+        "specificity": 0.6621331424481031,
+        "support": 3871
+      },
+      "Mild": {
+        "precision": 0.3888888888888889,
+        "recall": 0.1721311475409836,
+        "f1": 0.23863636363636365,
+        "specificity": 0.9798041615667075,
+        "support": 366
+      },
+      "Moderate": {
+        "precision": 0.7142857142857143,
+        "recall": 0.5982367758186398,
+        "f1": 0.6511309115832762,
+        "specificity": 0.957532409476978,
+        "support": 794
+      },
+      "Severe": {
+        "precision": 0.5172413793103449,
+        "recall": 0.46153846153846156,
+        "f1": 0.4878048780487805,
+        "specificity": 0.989100817438692,
+        "support": 130
+      },
+      "PDR": {
+        "precision": 0.6310679611650486,
+        "recall": 0.6074766355140186,
+        "f1": 0.6190476190476191,
+        "specificity": 0.9926370858360782,
+        "support": 107
+      }
+    },
+    "majority_baseline_acc": 0.7348139711465452,
+    "anyDR_sensitivity": 0.6621331424481031,
+    "anyDR_specificity": 0.968741927150607,
+    "anyDR_auc": 0.8930525555093054,
+    "anyDR_false_negatives": 472,
+    "referable_sensitivity": 0.7303588748787585,
+    "referable_specificity": 0.9690818975690347,
+    "referable_auc": 0.9396373502379731,
+    "referable_false_negatives": 278,
+    "sensitivity": 0.561624989512542,
+    "specificity": 0.9162415233533118
+  }
+}

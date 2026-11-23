@@ -1,0 +1,25 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 01 loss 1.1416 acc 0.709 | val acc 0.7137 mF1 0.3762 qwk 0.5459 auc 0.7946 | 293s *
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 02 loss 1.0482 acc 0.753 | val acc 0.7584 mF1 0.3425 qwk 0.5290 auc 0.7980 | 271s
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 03 loss 1.0050 acc 0.766 | val acc 0.7715 mF1 0.4292 qwk 0.6101 auc 0.8263 | 273s *
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 04 loss 0.9672 acc 0.776 | val acc 0.8013 mF1 0.4894 qwk 0.6666 auc 0.8522 | 271s *
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 05 loss 0.9315 acc 0.786 | val acc 0.7942 mF1 0.4810 qwk 0.6841 auc 0.8606 | 267s *
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 06 loss 0.8885 acc 0.798 | val acc 0.7893 mF1 0.5111 qwk 0.6656 auc 0.8629 | 263s *
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 07 loss 0.8602 acc 0.805 | val acc 0.8223 mF1 0.5210 qwk 0.7134 auc 0.8746 | 264s *
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 08 loss 0.8372 acc 0.814 | val acc 0.8250 mF1 0.5375 qwk 0.7457 auc 0.8788 | 262s *
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 09 loss 0.8007 acc 0.821 | val acc 0.8326 mF1 0.5749 qwk 0.7695 auc 0.8845 | 263s *
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 10 loss 0.7836 acc 0.826 | val acc 0.8371 mF1 0.5728 qwk 0.7667 auc 0.8914 | 262s
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 11 loss 0.7644 acc 0.830 | val acc 0.8381 mF1 0.5773 qwk 0.7730 auc 0.8917 | 262s *
+[resnet50_rf__eyepacs__5class__raw_384_s42] ep 12 loss 0.7483 acc 0.834 | val acc 0.8377 mF1 0.5847 qwk 0.7717 auc 0.8921 | 261s *
+{
+  "run_name": "resnet50_rf__eyepacs__5class__raw_384_s42",
+  "best_epoch": 12,
+  "train_time_s": 3213.56315946579,
+  "params": 23518277,
+  "val": {
+    "accuracy": 0.8377,
+    "macro_f1": 0.5847,
+    "qwk": 0.7717,
+    "roc_auc": 0.8921
+  }
+}

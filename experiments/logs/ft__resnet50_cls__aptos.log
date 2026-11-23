@@ -1,0 +1,28 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+init_from: <All keys matched successfully>
+[ft__resnet50_cls__aptos] ep 01 loss 0.8860 acc 0.775 | val acc 0.8359 mF1 0.6687 qwk 0.8986 auc 0.9447 | 50s *
+[ft__resnet50_cls__aptos] ep 02 loss 0.7029 acc 0.806 | val acc 0.8321 mF1 0.6826 qwk 0.8966 auc 0.9485 | 24s *
+[ft__resnet50_cls__aptos] ep 03 loss 0.6516 acc 0.819 | val acc 0.8454 mF1 0.6951 qwk 0.9031 auc 0.9526 | 26s *
+[ft__resnet50_cls__aptos] ep 04 loss 0.6067 acc 0.835 | val acc 0.8531 mF1 0.7011 qwk 0.9284 auc 0.9594 | 26s *
+[ft__resnet50_cls__aptos] ep 05 loss 0.5986 acc 0.827 | val acc 0.8550 mF1 0.6957 qwk 0.9082 auc 0.9602 | 26s
+[ft__resnet50_cls__aptos] ep 06 loss 0.5689 acc 0.846 | val acc 0.8626 mF1 0.7083 qwk 0.9173 auc 0.9538 | 27s
+[ft__resnet50_cls__aptos] ep 07 loss 0.5640 acc 0.841 | val acc 0.8664 mF1 0.7320 qwk 0.9182 auc 0.9554 | 28s *
+[ft__resnet50_cls__aptos] ep 08 loss 0.5341 acc 0.857 | val acc 0.8607 mF1 0.6992 qwk 0.9205 auc 0.9560 | 26s
+[ft__resnet50_cls__aptos] ep 09 loss 0.5237 acc 0.860 | val acc 0.8626 mF1 0.7142 qwk 0.9170 auc 0.9576 | 27s
+[ft__resnet50_cls__aptos] ep 10 loss 0.5139 acc 0.854 | val acc 0.8550 mF1 0.7006 qwk 0.9114 auc 0.9573 | 26s
+[ft__resnet50_cls__aptos] ep 11 loss 0.4945 acc 0.858 | val acc 0.8645 mF1 0.7244 qwk 0.9139 auc 0.9568 | 27s
+[ft__resnet50_cls__aptos] ep 12 loss 0.4956 acc 0.861 | val acc 0.8473 mF1 0.6966 qwk 0.9106 auc 0.9547 | 27s
+[ft__resnet50_cls__aptos] ep 13 loss 0.4757 acc 0.870 | val acc 0.8569 mF1 0.7103 qwk 0.9078 auc 0.9550 | 26s
+early stop at epoch 13 (best 7)
+{
+  "run_name": "ft__resnet50_cls__aptos",
+  "best_epoch": 7,
+  "train_time_s": 367.6162705421448,
+  "params": 23518277,
+  "val": {
+    "accuracy": 0.8664,
+    "macro_f1": 0.732,
+    "qwk": 0.9182,
+    "roc_auc": 0.9554
+  }
+}

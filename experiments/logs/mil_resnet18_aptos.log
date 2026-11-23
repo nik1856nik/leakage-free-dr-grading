@@ -1,0 +1,43 @@
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 01 loss 1.0287 acc 0.693 | val acc 0.7309 mF1 0.4132 qwk 0.7009 auc 0.9096 | 79s *
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 02 loss 0.9304 acc 0.725 | val acc 0.7996 mF1 0.5482 qwk 0.8528 auc 0.9268 | 60s *
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 03 loss 0.8764 acc 0.738 | val acc 0.7691 mF1 0.5086 qwk 0.7809 auc 0.9370 | 59s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 04 loss 0.8298 acc 0.762 | val acc 0.8206 mF1 0.5994 qwk 0.8729 auc 0.9467 | 58s *
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 05 loss 0.8208 acc 0.756 | val acc 0.8511 mF1 0.6336 qwk 0.8850 auc 0.9429 | 58s *
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 06 loss 0.8057 acc 0.766 | val acc 0.8263 mF1 0.6490 qwk 0.9055 auc 0.9472 | 58s *
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 07 loss 0.7949 acc 0.775 | val acc 0.8416 mF1 0.6259 qwk 0.8895 auc 0.9583 | 59s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 08 loss 0.7608 acc 0.782 | val acc 0.8454 mF1 0.6552 qwk 0.8698 auc 0.9481 | 59s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 09 loss 0.7917 acc 0.765 | val acc 0.8092 mF1 0.6433 qwk 0.8714 auc 0.9443 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 10 loss 0.7530 acc 0.783 | val acc 0.8359 mF1 0.6063 qwk 0.8863 auc 0.9551 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 11 loss 0.7453 acc 0.781 | val acc 0.8511 mF1 0.6506 qwk 0.8854 auc 0.9551 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 12 loss 0.7141 acc 0.783 | val acc 0.7691 mF1 0.5946 qwk 0.8470 auc 0.9425 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 13 loss 0.7424 acc 0.785 | val acc 0.8321 mF1 0.6665 qwk 0.9085 auc 0.9525 | 85s *
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 14 loss 0.7468 acc 0.784 | val acc 0.8263 mF1 0.6314 qwk 0.8902 auc 0.9523 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 15 loss 0.7146 acc 0.797 | val acc 0.8302 mF1 0.6073 qwk 0.8924 auc 0.9545 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 16 loss 0.7182 acc 0.794 | val acc 0.8435 mF1 0.6802 qwk 0.9003 auc 0.9493 | 86s *
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 17 loss 0.7182 acc 0.793 | val acc 0.8511 mF1 0.6440 qwk 0.9109 auc 0.9533 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 18 loss 0.7088 acc 0.790 | val acc 0.8550 mF1 0.6947 qwk 0.8896 auc 0.9562 | 86s *
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 19 loss 0.6942 acc 0.794 | val acc 0.8187 mF1 0.6700 qwk 0.8709 auc 0.9550 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 20 loss 0.6933 acc 0.801 | val acc 0.8282 mF1 0.6590 qwk 0.8825 auc 0.9510 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 21 loss 0.6967 acc 0.795 | val acc 0.8626 mF1 0.6577 qwk 0.9051 auc 0.9574 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 22 loss 0.7081 acc 0.803 | val acc 0.8416 mF1 0.6651 qwk 0.9053 auc 0.9484 | 85s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 23 loss 0.7011 acc 0.792 | val acc 0.8531 mF1 0.6692 qwk 0.9076 auc 0.9526 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 24 loss 0.6887 acc 0.802 | val acc 0.8531 mF1 0.6512 qwk 0.9036 auc 0.9546 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 25 loss 0.6690 acc 0.808 | val acc 0.8531 mF1 0.6643 qwk 0.9142 auc 0.9530 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 26 loss 0.6939 acc 0.810 | val acc 0.8550 mF1 0.6704 qwk 0.9002 auc 0.9536 | 87s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 27 loss 0.6844 acc 0.799 | val acc 0.8588 mF1 0.6455 qwk 0.8959 auc 0.9591 | 87s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 28 loss 0.6732 acc 0.805 | val acc 0.8187 mF1 0.6749 qwk 0.8762 auc 0.9496 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 29 loss 0.6552 acc 0.809 | val acc 0.8664 mF1 0.6627 qwk 0.9037 auc 0.9595 | 86s
+[mil_resnet18__aptos__5class__graham_rim_512_s42] ep 30 loss 0.6670 acc 0.813 | val acc 0.8511 mF1 0.6500 qwk 0.8877 auc 0.9560 | 86s
+early stop at epoch 30 (best 18)
+{
+  "run_name": "mil_resnet18__aptos__5class__graham_rim_512_s42",
+  "best_epoch": 18,
+  "train_time_s": 2381.666580438614,
+  "params": 11246981,
+  "val": {
+    "accuracy": 0.855,
+    "macro_f1": 0.6947,
+    "qwk": 0.8896,
+    "roc_auc": 0.9562
+  }
+}

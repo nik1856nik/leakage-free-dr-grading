@@ -1,0 +1,108 @@
+{
+  "run_name": "tune__effb3_se__res512__aptos",
+  "model": "effb3_se",
+  "paper": "P4",
+  "dataset": "aptos",
+  "task": "5class",
+  "best_epoch": 14,
+  "best_val_score": 0.8437599114494987,
+  "train_time_s": 1512.4909226894379,
+  "params": 11000461,
+  "trainable_params": 11000461,
+  "val": {
+    "n": 524,
+    "accuracy": 0.8759541984732825,
+    "macro_precision": 0.763709761930701,
+    "macro_recall": 0.7722730889457233,
+    "macro_f1": 0.7662013228407281,
+    "weighted_f1": 0.8771484958187191,
+    "macro_specificity": 0.9701320309263934,
+    "roc_auc": 0.9635470574636317,
+    "qwk": 0.9213185000582693,
+    "confusion_matrix": [
+      [
+        267,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        36,
+        13,
+        1,
+        1
+      ],
+      [
+        1,
+        12,
+        112,
+        10,
+        3
+      ],
+      [
+        0,
+        1,
+        3,
+        17,
+        4
+      ],
+      [
+        0,
+        2,
+        9,
+        2,
+        27
+      ]
+    ],
+    "per_class": {
+      "No DR": {
+        "precision": 0.996268656716418,
+        "recall": 0.9888888888888889,
+        "f1": 0.9925650557620818,
+        "specificity": 0.9960629921259843,
+        "support": 270
+      },
+      "Mild": {
+        "precision": 0.6666666666666666,
+        "recall": 0.7058823529411765,
+        "f1": 0.6857142857142857,
+        "specificity": 0.9619450317124736,
+        "support": 51
+      },
+      "Moderate": {
+        "precision": 0.8175182481751825,
+        "recall": 0.8115942028985508,
+        "f1": 0.8145454545454546,
+        "specificity": 0.9352331606217616,
+        "support": 138
+      },
+      "Severe": {
+        "precision": 0.5666666666666667,
+        "recall": 0.68,
+        "f1": 0.6181818181818182,
+        "specificity": 0.9739478957915831,
+        "support": 25
+      },
+      "PDR": {
+        "precision": 0.7714285714285715,
+        "recall": 0.675,
+        "f1": 0.72,
+        "specificity": 0.9834710743801653,
+        "support": 40
+      }
+    },
+    "majority_baseline_acc": 0.5152671755725191,
+    "anyDR_sensitivity": 0.9960629921259843,
+    "anyDR_specificity": 0.9888888888888889,
+    "anyDR_auc": 0.9993729950422864,
+    "anyDR_false_negatives": 1,
+    "referable_sensitivity": 0.9211822660098522,
+    "referable_specificity": 0.9532710280373832,
+    "referable_auc": 0.9840553688442828,
+    "referable_false_negatives": 16,
+    "sensitivity": 0.7722730889457233,
+    "specificity": 0.9701320309263934
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "name": "DR five-class grading ensemble (APTOS 2019)",
+  "decision": "thr",
+  "thresholds": [
+    0.640000000000001,
+    1.5100000000000018,
+    2.740000000000003,
+    3.090000000000003
+  ],
+  "tta_flips": 4,
+  "cache_size": 512,
+  "classes": [
+    "No DR",
+    "Mild",
+    "Moderate",
+    "Severe",
+    "PDR"
+  ],
+  "members": [
+    {
+      "checkpoint": "ft__effb3_cls__aptos.pt",
+      "model": "effb3_se",
+      "head": "cls",
+      "size": 512,
+      "enhancement": "ben_graham",
+      "trained_on": "aptos",
+      "init_from": "checkpoints/effb3_se__eyepacs__5class__ben_graham_512_s42.pt"
+    },
+    {
+      "checkpoint": "ft__effb3_reg__aptos.pt",
+      "model": "effb3_se",
+      "head": "reg",
+      "size": 512,
+      "enhancement": "ben_graham",
+      "trained_on": "aptos",
+      "init_from": "checkpoints/effb3_se__eyepacs__5class__ben_graham_512_s42.pt"
+    },
+    {
+      "checkpoint": "inception_v3__aptos__5class__raw_384_s42.pt",
+      "model": "inception_v3",
+      "head": "cls",
+      "size": 384,
+      "enhancement": "raw",
+      "trained_on": "aptos",
+      "init_from": null
+    },
+    {
+      "checkpoint": "tune__densenet169__focal__aptos.pt",
+      "model": "densenet169",
+      "head": "cls",
+      "size": 384,
+      "enhancement": "raw",
+      "trained_on": "aptos",
+      "init_from": null
+    }
+  ],
+  "selection": "validation only: 770 candidate ensembles ranked by repeated 5-fold cross-fitted 0.5*(QWK+macro-F1)",
+  "validation_cross_fitted": {
+    "accuracy": 0.9026717557251909,
+    "qwk": 0.9532526852942226,
+    "macro_f1": 0.8019231163284134,
+    "roc_auc": 0.9665211843236152
+  },
+  "aptos_test_once": {
+    "accuracy": 0.8457142857142858,
+    "qwk": 0.93077414621447,
+    "macro_f1": 0.6828521031207598,
+    "roc_auc": 0.9602442624633543,
+    "referable": {
+      "accuracy": 0.9352380952380952,
+      "auc": 0.9841487997067986,
+      "sensitivity": 0.9607843137254902,
+      "specificity": 0.9190031152647975,
+      "prevalence": 0.38857142857142857
+    }
+  }
+}

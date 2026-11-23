@@ -1,0 +1,31 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/karthii/Desktop/idse/letsdo/DR_Detection/src/training/engine.py:185: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  sched.step()
+[inception_v3__aptos__5class__raw_384_s42] ep 01 loss 1.1928 acc 0.632 | val acc 0.7023 mF1 0.4093 qwk 0.6342 auc 0.8483 | 84s *
+[inception_v3__aptos__5class__raw_384_s42] ep 02 loss 0.9643 acc 0.735 | val acc 0.7996 mF1 0.5551 qwk 0.8493 auc 0.9313 | 26s *
+[inception_v3__aptos__5class__raw_384_s42] ep 03 loss 0.8315 acc 0.761 | val acc 0.7996 mF1 0.6575 qwk 0.8588 auc 0.9487 | 27s *
+[inception_v3__aptos__5class__raw_384_s42] ep 04 loss 0.7817 acc 0.773 | val acc 0.8454 mF1 0.6974 qwk 0.9072 auc 0.9515 | 27s *
+[inception_v3__aptos__5class__raw_384_s42] ep 05 loss 0.7264 acc 0.793 | val acc 0.8282 mF1 0.6587 qwk 0.8871 auc 0.9517 | 27s
+[inception_v3__aptos__5class__raw_384_s42] ep 06 loss 0.7015 acc 0.793 | val acc 0.7920 mF1 0.5562 qwk 0.8554 auc 0.9509 | 27s
+[inception_v3__aptos__5class__raw_384_s42] ep 07 loss 0.6435 acc 0.809 | val acc 0.8702 mF1 0.7321 qwk 0.9173 auc 0.9580 | 27s *
+[inception_v3__aptos__5class__raw_384_s42] ep 08 loss 0.6218 acc 0.819 | val acc 0.8340 mF1 0.6800 qwk 0.9120 auc 0.9544 | 28s
+[inception_v3__aptos__5class__raw_384_s42] ep 09 loss 0.5876 acc 0.831 | val acc 0.8531 mF1 0.7122 qwk 0.9037 auc 0.9568 | 27s
+[inception_v3__aptos__5class__raw_384_s42] ep 10 loss 0.5599 acc 0.837 | val acc 0.8550 mF1 0.7017 qwk 0.9153 auc 0.9469 | 27s
+[inception_v3__aptos__5class__raw_384_s42] ep 11 loss 0.5436 acc 0.847 | val acc 0.8531 mF1 0.7195 qwk 0.9017 auc 0.9585 | 28s
+[inception_v3__aptos__5class__raw_384_s42] ep 12 loss 0.5229 acc 0.847 | val acc 0.8607 mF1 0.6996 qwk 0.9037 auc 0.9534 | 28s
+[inception_v3__aptos__5class__raw_384_s42] ep 13 loss 0.5089 acc 0.859 | val acc 0.8397 mF1 0.7112 qwk 0.8994 auc 0.9545 | 28s
+[inception_v3__aptos__5class__raw_384_s42] ep 14 loss 0.4700 acc 0.869 | val acc 0.8569 mF1 0.7265 qwk 0.8986 auc 0.9513 | 27s
+[inception_v3__aptos__5class__raw_384_s42] ep 15 loss 0.4403 acc 0.875 | val acc 0.8740 mF1 0.7273 qwk 0.9155 auc 0.9535 | 27s
+early stop at epoch 15 (best 7)
+{
+  "run_name": "inception_v3__aptos__5class__raw_384_s42",
+  "best_epoch": 7,
+  "train_time_s": 466.6931984424591,
+  "params": 21795813,
+  "val": {
+    "accuracy": 0.8702,
+    "macro_f1": 0.7321,
+    "qwk": 0.9173,
+    "roc_auc": 0.958
+  }
+}

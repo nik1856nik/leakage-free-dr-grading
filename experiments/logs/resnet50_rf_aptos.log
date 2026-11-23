@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+train: X (2437, 2048)  (4.9 ms/img feature extraction)
+val: X (524, 2048)  (6.0 ms/img feature extraction)
+  {'n_estimators': 100, 'class_weight': None}  val acc 0.8721 mF1 0.7248 qwk 0.9193 -> 0.8221
+  {'n_estimators': 100, 'class_weight': 'balanced_subsample'}  val acc 0.8721 mF1 0.7341 qwk 0.9185 -> 0.8263
+  {'n_estimators': 300, 'class_weight': None}  val acc 0.8740 mF1 0.7354 qwk 0.9178 -> 0.8266
+  {'n_estimators': 300, 'class_weight': 'balanced_subsample'}  val acc 0.8760 mF1 0.7453 qwk 0.9165 -> 0.8309
+  {'n_estimators': 500, 'class_weight': None}  val acc 0.8721 mF1 0.7332 qwk 0.9172 -> 0.8252
+  {'n_estimators': 500, 'class_weight': 'balanced_subsample'}  val acc 0.8760 mF1 0.7425 qwk 0.9169 -> 0.8297
+best: {'n_estimators': 300, 'class_weight': 'balanced_subsample'}
+{"run_name": "resnet50_rf__aptos__5class", "classifier_params": {"n_estimators": 300, "class_weight": "balanced_subsample"}}
+val {'accuracy': 0.876, 'macro_f1': 0.7453, 'qwk': 0.9165, 'roc_auc': 0.9596}

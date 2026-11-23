@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[tune__effb3_se__focal__aptos] ep 01 loss 0.4893 acc 0.634 | val acc 0.7805 mF1 0.5843 qwk 0.8304 auc 0.9352 | 134s *
+[tune__effb3_se__focal__aptos] ep 02 loss 0.2975 acc 0.770 | val acc 0.8244 mF1 0.6899 qwk 0.8869 auc 0.9446 | 44s *
+[tune__effb3_se__focal__aptos] ep 03 loss 0.2412 acc 0.801 | val acc 0.8302 mF1 0.6642 qwk 0.8991 auc 0.9559 | 45s
+[tune__effb3_se__focal__aptos] ep 04 loss 0.2021 acc 0.828 | val acc 0.8454 mF1 0.7016 qwk 0.9259 auc 0.9540 | 45s *
+[tune__effb3_se__focal__aptos] ep 05 loss 0.1773 acc 0.821 | val acc 0.8149 mF1 0.6376 qwk 0.8793 auc 0.9490 | 45s
+[tune__effb3_se__focal__aptos] ep 06 loss 0.1479 acc 0.851 | val acc 0.8225 mF1 0.6952 qwk 0.8734 auc 0.9475 | 45s
+[tune__effb3_se__focal__aptos] ep 07 loss 0.1352 acc 0.870 | val acc 0.8092 mF1 0.6411 qwk 0.8893 auc 0.9216 | 45s
+[tune__effb3_se__focal__aptos] ep 08 loss 0.1094 acc 0.878 | val acc 0.8473 mF1 0.6968 qwk 0.9119 auc 0.9530 | 45s
+[tune__effb3_se__focal__aptos] ep 09 loss 0.0983 acc 0.882 | val acc 0.8225 mF1 0.6292 qwk 0.8845 auc 0.9566 | 45s
+[tune__effb3_se__focal__aptos] ep 10 loss 0.0834 acc 0.911 | val acc 0.8569 mF1 0.7198 qwk 0.9127 auc 0.9576 | 45s *
+[tune__effb3_se__focal__aptos] ep 11 loss 0.0706 acc 0.924 | val acc 0.8531 mF1 0.7027 qwk 0.9166 auc 0.9556 | 45s
+[tune__effb3_se__focal__aptos] ep 12 loss 0.0501 acc 0.937 | val acc 0.8378 mF1 0.6809 qwk 0.9048 auc 0.9546 | 45s
+[tune__effb3_se__focal__aptos] ep 13 loss 0.0552 acc 0.928 | val acc 0.8244 mF1 0.6836 qwk 0.9075 auc 0.9554 | 46s
+[tune__effb3_se__focal__aptos] ep 14 loss 0.0346 acc 0.952 | val acc 0.8378 mF1 0.7004 qwk 0.9120 auc 0.9546 | 45s
+[tune__effb3_se__focal__aptos] ep 15 loss 0.0317 acc 0.953 | val acc 0.8416 mF1 0.6962 qwk 0.9013 auc 0.9546 | 45s
+[tune__effb3_se__focal__aptos] ep 16 loss 0.0292 acc 0.962 | val acc 0.8340 mF1 0.6774 qwk 0.9125 auc 0.9558 | 45s
+[tune__effb3_se__focal__aptos] ep 17 loss 0.0171 acc 0.975 | val acc 0.8511 mF1 0.6908 qwk 0.9112 auc 0.9541 | 45s
+[tune__effb3_se__focal__aptos] ep 18 loss 0.0225 acc 0.973 | val acc 0.8511 mF1 0.6684 qwk 0.9108 auc 0.9550 | 45s
+early stop at epoch 18 (best 10)
+{
+  "run_name": "tune__effb3_se__focal__aptos",
+  "best_epoch": 10,
+  "train_time_s": 901.5247399806976,
+  "params": 11000461,
+  "val": {
+    "accuracy": 0.8569,
+    "macro_f1": 0.7198,
+    "qwk": 0.9127,
+    "roc_auc": 0.9576
+  }
+}

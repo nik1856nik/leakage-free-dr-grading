@@ -1,0 +1,36 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[tune__effb3_se__res512__aptos] ep 01 loss 1.1879 acc 0.637 | val acc 0.8111 mF1 0.5147 qwk 0.8089 auc 0.9205 | 150s *
+[tune__effb3_se__res512__aptos] ep 02 loss 0.8021 acc 0.774 | val acc 0.8092 mF1 0.6599 qwk 0.8889 auc 0.9477 | 63s *
+[tune__effb3_se__res512__aptos] ep 03 loss 0.6857 acc 0.806 | val acc 0.8683 mF1 0.7398 qwk 0.9084 auc 0.9609 | 64s *
+[tune__effb3_se__res512__aptos] ep 04 loss 0.5928 acc 0.831 | val acc 0.8626 mF1 0.6986 qwk 0.9191 auc 0.9625 | 64s
+[tune__effb3_se__res512__aptos] ep 05 loss 0.5702 acc 0.834 | val acc 0.8492 mF1 0.7277 qwk 0.9140 auc 0.9548 | 65s
+[tune__effb3_se__res512__aptos] ep 06 loss 0.5227 acc 0.853 | val acc 0.8244 mF1 0.6925 qwk 0.8877 auc 0.9596 | 64s
+[tune__effb3_se__res512__aptos] ep 07 loss 0.4829 acc 0.866 | val acc 0.8378 mF1 0.6517 qwk 0.9053 auc 0.9370 | 65s
+[tune__effb3_se__res512__aptos] ep 08 loss 0.4240 acc 0.875 | val acc 0.8645 mF1 0.7528 qwk 0.9042 auc 0.9643 | 65s *
+[tune__effb3_se__res512__aptos] ep 09 loss 0.4179 acc 0.880 | val acc 0.8550 mF1 0.7171 qwk 0.9028 auc 0.9653 | 65s
+[tune__effb3_se__res512__aptos] ep 10 loss 0.3394 acc 0.902 | val acc 0.8454 mF1 0.7206 qwk 0.9125 auc 0.9622 | 65s
+[tune__effb3_se__res512__aptos] ep 11 loss 0.3011 acc 0.916 | val acc 0.8588 mF1 0.7230 qwk 0.9010 auc 0.9555 | 65s
+[tune__effb3_se__res512__aptos] ep 12 loss 0.2717 acc 0.920 | val acc 0.8607 mF1 0.7095 qwk 0.9075 auc 0.9614 | 65s
+[tune__effb3_se__res512__aptos] ep 13 loss 0.2242 acc 0.935 | val acc 0.8340 mF1 0.6970 qwk 0.9100 auc 0.9530 | 65s
+[tune__effb3_se__res512__aptos] ep 14 loss 0.1909 acc 0.947 | val acc 0.8760 mF1 0.7662 qwk 0.9213 auc 0.9635 | 65s *
+[tune__effb3_se__res512__aptos] ep 15 loss 0.1704 acc 0.953 | val acc 0.8702 mF1 0.7356 qwk 0.9236 auc 0.9591 | 65s
+[tune__effb3_se__res512__aptos] ep 16 loss 0.1327 acc 0.961 | val acc 0.8588 mF1 0.7253 qwk 0.9171 auc 0.9529 | 65s
+[tune__effb3_se__res512__aptos] ep 17 loss 0.1018 acc 0.975 | val acc 0.8664 mF1 0.7273 qwk 0.9145 auc 0.9567 | 65s
+[tune__effb3_se__res512__aptos] ep 18 loss 0.0762 acc 0.979 | val acc 0.8626 mF1 0.7082 qwk 0.9144 auc 0.9617 | 65s
+[tune__effb3_se__res512__aptos] ep 19 loss 0.0622 acc 0.983 | val acc 0.8473 mF1 0.6913 qwk 0.9063 auc 0.9581 | 65s
+[tune__effb3_se__res512__aptos] ep 20 loss 0.0486 acc 0.987 | val acc 0.8588 mF1 0.7307 qwk 0.9119 auc 0.9589 | 65s
+[tune__effb3_se__res512__aptos] ep 21 loss 0.0291 acc 0.993 | val acc 0.8569 mF1 0.7145 qwk 0.9098 auc 0.9615 | 66s
+[tune__effb3_se__res512__aptos] ep 22 loss 0.0536 acc 0.986 | val acc 0.8607 mF1 0.7236 qwk 0.9177 auc 0.9591 | 65s
+early stop at epoch 22 (best 14)
+{
+  "run_name": "tune__effb3_se__res512__aptos",
+  "best_epoch": 14,
+  "train_time_s": 1512.4909226894379,
+  "params": 11000461,
+  "val": {
+    "accuracy": 0.876,
+    "macro_f1": 0.7662,
+    "qwk": 0.9213,
+    "roc_auc": 0.9635
+  }
+}

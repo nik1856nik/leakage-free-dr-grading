@@ -1,0 +1,7431 @@
+{
+  "dataset": "aptos",
+  "members": [
+    "checkpoints/ft__effb3_cls__aptos.pt",
+    "checkpoints/ft__effb3_reg__aptos.pt",
+    "checkpoints/inception_v3__aptos__5class__raw_384_s42.pt",
+    "checkpoints/tune__densenet169__focal__aptos.pt"
+  ],
+  "mode": "thr",
+  "thresholds": [
+    0.640000000000001,
+    1.5100000000000018,
+    2.740000000000003,
+    3.090000000000003
+  ],
+  "cv_val_score": 0.877587900811318,
+  "val_cv": {
+    "n": 524,
+    "accuracy": 0.9026717557251909,
+    "macro_precision": 0.834753276003276,
+    "macro_recall": 0.7809642890972814,
+    "macro_f1": 0.8019231163284134,
+    "weighted_f1": 0.8998088688519237,
+    "macro_specificity": 0.9754928295933858,
+    "roc_auc": 0.9665211843236152,
+    "qwk": 0.9532526852942226,
+    "confusion_matrix": [
+      [
+        269,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        30,
+        20,
+        0,
+        1
+      ],
+      [
+        0,
+        5,
+        127,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        15,
+        4
+      ],
+      [
+        0,
+        0,
+        7,
+        1,
+        32
+      ]
+    ],
+    "per_class": {
+      "No DR": {
+        "precision": 1.0,
+        "recall": 0.9962962962962963,
+        "f1": 0.9981447124304267,
+        "specificity": 1.0,
+        "support": 270
+      },
+      "Mild": {
+        "precision": 0.8333333333333334,
+        "recall": 0.5882352941176471,
+        "f1": 0.6896551724137931,
+        "specificity": 0.9873150105708245,
+        "support": 51
+      },
+      "Moderate": {
+        "precision": 0.79375,
+        "recall": 0.9202898550724637,
+        "f1": 0.8523489932885906,
+        "specificity": 0.9145077720207254,
+        "support": 138
+      },
+      "Severe": {
+        "precision": 0.6818181818181818,
+        "recall": 0.6,
+        "f1": 0.6382978723404256,
+        "specificity": 0.9859719438877755,
+        "support": 25
+      },
+      "PDR": {
+        "precision": 0.8648648648648649,
+        "recall": 0.8,
+        "f1": 0.8311688311688312,
+        "specificity": 0.9896694214876033,
+        "support": 40
+      }
+    },
+    "majority_baseline_acc": 0.5152671755725191,
+    "anyDR_sensitivity": 1.0,
+    "anyDR_specificity": 0.9962962962962963,
+    "anyDR_auc": 1.0,
+    "anyDR_false_negatives": 0,
+    "referable_sensitivity": 0.9753694581280788,
+    "referable_specificity": 0.9345794392523364,
+    "referable_auc": 0.9854058284609364,
+    "referable_false_negatives": 5,
+    "sensitivity": 0.7809642890972814,
+    "specificity": 0.9754928295933858
+  },
+  "val_fitted": {
+    "n": 524,
+    "accuracy": 0.9064885496183206,
+    "macro_precision": 0.8524248698161742,
+    "macro_recall": 0.7897050298380222,
+    "macro_f1": 0.8140258146703061,
+    "weighted_f1": 0.903659640652036,
+    "macro_specificity": 0.9762115526030348,
+    "roc_auc": 0.9665211843236152,
+    "qwk": 0.9524860740448855,
+    "confusion_matrix": [
+      [
+        270,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        30,
+        20,
+        0,
+        1
+      ],
+      [
+        0,
+        5,
+        127,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        16,
+        3
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        32
+      ]
+    ],
+    "per_class": {
+      "No DR": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "specificity": 1.0,
+        "support": 270
+      },
+      "Mild": {
+        "precision": 0.8571428571428571,
+        "recall": 0.5882352941176471,
+        "f1": 0.6976744186046512,
+        "specificity": 0.9894291754756871,
+        "support": 51
+      },
+      "Moderate": {
+        "precision": 0.7888198757763976,
+        "recall": 0.9202898550724637,
+        "f1": 0.8494983277591973,
+        "specificity": 0.9119170984455959,
+        "support": 138
+      },
+      "Severe": {
+        "precision": 0.7272727272727273,
+        "recall": 0.64,
+        "f1": 0.6808510638297872,
+        "specificity": 0.9879759519038076,
+        "support": 25
+      },
+      "PDR": {
+        "precision": 0.8888888888888888,
+        "recall": 0.8,
+        "f1": 0.8421052631578947,
+        "specificity": 0.9917355371900827,
+        "support": 40
+      }
+    },
+    "majority_baseline_acc": 0.5152671755725191,
+    "anyDR_sensitivity": 1.0,
+    "anyDR_specificity": 1.0,
+    "anyDR_auc": 1.0,
+    "anyDR_false_negatives": 0,
+    "referable_sensitivity": 0.9753694581280788,
+    "referable_specificity": 0.9345794392523364,
+    "referable_auc": 0.9854058284609364,
+    "referable_false_negatives": 5,
+    "sensitivity": 0.7897050298380222,
+    "specificity": 0.9762115526030348
+  },
+  "candidates": [
+    {
+      "score": 0.877587900811318,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8765691526646886,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8764760294889641,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8763257969336913,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8739552862543762,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8732418789336769,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8732280110500203,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8730616682752452,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8730420501481724,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8729792492430728,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8729181952973144,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8727948232732811,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8726804879437486,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8717074098179673,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8713207287499269,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8713148087934885,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8710846566540719,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8709988205782987,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8707159241441612,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8705578495379132,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8705040888558917,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8701515550691353,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8697710733700778,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8697414962799047,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8696946669377197,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8696076790127005,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8695634469570803,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8692942881314486,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8692857659986845,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8692780122114467,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8692251583970819,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.869168819359515,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8691182092266153,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.868948517047913,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8689374693239764,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8688127488113335,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8687122488654269,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8686139618653383,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8685987483774702,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8684992953389288,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8683130331354161,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8682808454743409,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8681062916427331,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8680497404954637,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8680478008045287,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8680358108605066,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8680022053210368,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8679601362301319,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8679200259357446,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8678666904694916,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8677655377695643,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8677206338854873,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8674736511896821,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8674234184128244,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8674130162755347,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8673693711771717,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8672438409469119,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8672004235356559,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8671779831862221,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8671702423980148,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8670794455682728,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8670689498571617,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8668815191107181,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8668729623116964,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8668705851694268,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8668637922005336,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8665365251574865,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8665095160377808,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.866502060159334,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8664834737284554,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8664740034570724,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.866455345024684,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8664455700951108,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8664442582489273,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8663832238794665,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8663148845039383,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8662719856461083,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8662481893133812,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8662004923906959,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.866175164698756,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8660102235426073,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8658750518205448,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8657401284531749,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8655770914322123,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8655513572205091,
+      "members": [
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8655374316811887,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8654791122669141,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8654386954353646,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8654204390438758,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8652803342890005,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8652729906095629,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8651990773007969,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.865142745465436,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.865078749579625,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8650716655100877,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8650275129238834,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8649945354553905,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8647148879850697,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.864655604590569,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8646404595584577,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8645888858060109,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.864577662630385,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8645657142939599,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8645371644802264,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8645270879988174,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8644501193112399,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8644141168023465,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8643973801018061,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8643763419199966,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8643330289581406,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8643307491908581,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8642753304588219,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8641396413719269,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8641225390538004,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8640939604448352,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8640449354108586,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8640355484032116,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8639710209914874,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8639025681040828,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8638966756955035,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8638566922308021,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8638225806942621,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8638074990532215,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8638035573003585,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8637458143186665,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8636587089221721,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8636364091287412,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8635890096699249,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8634974402516695,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8634791560102867,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8634721760347905,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8634039060581126,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8632891663121445,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8629737078788893,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8629047136643081,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8627440405420107,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8627435072010472,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8627222666006511,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8627192807670638,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8626930699922305,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8626602399957899,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8626600713634628,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8626583496660575,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8625590924170958,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8624993280335471,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8624053433395671,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8623796767119818,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8623049445659955,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8622619150885097,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8622376744622814,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.862221285353791,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8621944570594733,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8621524697168975,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8621449212770202,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8620710285015752,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8620427342429213,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8619007171260332,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8618923715371385,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8618147842722415,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8618023518916254,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8617954384717585,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8617539394945876,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8617081415607986,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8616493665742698,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8615472677582341,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8615312839237501,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8613776028945882,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8613315697581672,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.861323797372367,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.86127061015873,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8612302367637094,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8612269200915929,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.861223055786936,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8611802639226167,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8611353640624667,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8610574160828763,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8610431433204575,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8609908373209426,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8609802701008057,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8609185242270518,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8608355475891059,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.860825700647309,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8607452782432095,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8607381903078062,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8606959709634636,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8606768535318653,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8606576209769979,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8606565587397591,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8606510494104627,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8606302053675594,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8605284088947235,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8604807332020242,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8604788378247137,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8604766640880623,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8604113883939382,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8603401658372041,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8602257804053154,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8602169515419945,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8601611201447684,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8600795893051445,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8600718575086591,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8600515326718423,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8600487623347957,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8599630569182012,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8599071376652304,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8598178774972048,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8597533084502988,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8596309231870974,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8595869501658236,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8595208624063082,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.859471588325458,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8594681054192354,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8593408418456823,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8593201503712794,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8592985161092106,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8591777607625156,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8591300981771595,
+      "members": [
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8591071501945784,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8590827879902966,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8590726750739661,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8590620403109118,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8590371732787967,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8590261979187518,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8589981251933798,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8589948743968842,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8589905909754887,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8587516644642287,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.858716383096786,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8587009035470416,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8586792977415789,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8586626999726008,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8585924302595143,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8585299507653515,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8584803893835883,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8584543994539852,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8584498364854196,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8583720751626234,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8583506739147186,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8582951486321455,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8581955543737358,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.858192103221902,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8581661563609986,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8580546486325726,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8580316616340944,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8579525913588623,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8578771629077828,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8578609283763752,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8578115322459131,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8577968796305053,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8577231475917919,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8577084133527221,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8575889135301239,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8575335255204282,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8575197793884795,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8574786398475401,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8574551794993013,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8574227472598197,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.857297578356591,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8572605558673386,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8571539093420465,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8571173394161644,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8570502442020089,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8569714553973959,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.856958433931381,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8569013488626344,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8569002411733245,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8568872225522162,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8568362476473117,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8568133633840334,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8567554880837703,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8566986409831304,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8566934540895804,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8565625158338616,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8565609762285343,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8565438987484518,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8565266608987336,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8564962747048884,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8564682283969678,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8564407085158688,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8564020134246446,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8563969557189881,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8563856609837458,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8563750366863645,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.856345831512368,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8561914010710107,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8560904638344251,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8560771606712422,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.856014002014061,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8559263411286495,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8558691454317632,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8558249080612228,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8557527534742233,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8556803833363293,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8555965470321119,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8555741410646884,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8555549952244863,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8555536289375665,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8555475304235876,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8554706932053208,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8554412297284945,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8554125154027579,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8554094467976148,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8553937737883661,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.855379204959479,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8553746852321145,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8553049358027529,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8553045411014285,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8552945486540359,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8552481872552913,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8552270148775469,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8552232218580945,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8552173659504749,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8552132160618727,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8551548970521102,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8551061031769799,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8550509125920236,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.855044016555004,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8550426193705984,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8549966312598748,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8549694105201807,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8549318639981732,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.854741985520989,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.854731053492048,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8547247212639169,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8546438241842713,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8546333122540215,
+      "members": [
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8545963707953549,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8545873448555602,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8545238587438906,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8545021329992339,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8544578736407303,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.85445183781997,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8544320916151977,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8543671525104379,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8543300667940438,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8543171064810875,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8542083836277139,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8541998937780154,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8540308167808024,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8540078423332068,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8539782264556598,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.853977298385455,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.853941530293262,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.853927754196388,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8539078470721531,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8538484580075325,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8538014234267939,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.853797976787222,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8537557925132763,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8537297629021178,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.853729454411009,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8536816651849646,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8536778170967257,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8536392562464642,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8535759898718438,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8535694474802781,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8535664430160103,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8535263325725224,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8535034238674295,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8534967152839916,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8534153546769424,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8533681349734387,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8533150477158669,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8532987755718374,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8532782790790943,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8532213246746808,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8531323789974313,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8531271475474405,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8530808956728771,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8530778680336155,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8530112459797793,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8529928828905508,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8528443160664434,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8527871672967255,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8527536973374006,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8526999514313186,
+      "members": [
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8526897903708837,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8526897757757215,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8525102852047785,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8524575834630411,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8524439208906683,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.852385576318957,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8523629802487859,
+      "members": [
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8523626870166702,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8523563440700802,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8523166424931783,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8522710528679427,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8522523896449761,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8522447416190976,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.852191824598841,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.852112562700359,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8520955904803622,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.851974521013057,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8519644651655626,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8518638619331306,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8518620765102263,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8518071595231222,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8518005231918722,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8516954967099559,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8516952657946513,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8516832554531258,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8516376708249572,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8516332688134632,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8516224013504249,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8515908664370712,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8515240617303099,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8515122304227195,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8514803458565994,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8514767073166598,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8514511587550246,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8514437444457795,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8514018489501263,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8513994858566905,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8513752841317048,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8513416007824322,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.851328861558318,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8513126391618082,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8512052873605938,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8512022888067616,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8511434866220277,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8510691128430217,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8510533188910129,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8509885288028597,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8509522075976521,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8509260489317813,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8508603526842102,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.850739712832171,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.850655752477758,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.850597027569028,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8505668719611551,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8505432980708204,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8505392392209558,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8505090550833193,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8504787023538041,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8504410678702518,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8504372007392188,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8504321231887203,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8504224208210566,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8503665652087138,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.850362576732287,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8503177881605087,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8502813494455022,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8502757967300987,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8502168142897376,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8502042122884053,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8501104033168119,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8500406272508015,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8500055925711066,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8499830140001552,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8499651591921142,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8499537525290132,
+      "members": [
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8498393558058029,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8496682330330638,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8496599670603165,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8496189906161943,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8495265659836836,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.84951440049404,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.849485678653174,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8494612748136516,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8494586350887452,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8493742610313867,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8493604120566832,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.849247221150761,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8492405698632558,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8492303683926725,
+      "members": [
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8491862771585108,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8491796896632072,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8490948740524931,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8490725761021509,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8490642201173633,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8490483276931717,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8489252088303183,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8489116367959824,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8488498848817726,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8488343679305009,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8487957972055048,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8487147097764032,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8486978208970469,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8486952217303336,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.848693815311293,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8486902828960988,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8486223334668166,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8485290973618993,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8485130485122386,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8484396827579183,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8484136383524591,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8483154592282985,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8482571758815475,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8482123281542547,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8481764909762695,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.848097921958462,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8480908808717094,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8480627165530544,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8480377778608069,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8480268365761946,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8480133291398835,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8479264789481332,
+      "members": [
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8479217502861176,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8479160211492291,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8479073148580252,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8478639588929328,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8478524730584919,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8478487045154406,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8478307049900474,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8478186816613339,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8478157774534795,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8477178571492561,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8476224169684722,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8475716454981784,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.847559968452996,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8475357007664357,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8475226717048466,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8474920750851774,
+      "members": [
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8474418906946536,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8474254296826162,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8472435359701604,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8471181569074573,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8470965297833711,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8470488978914437,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8470381368272762,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8469483167419195,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8468328142452004,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8467285545146529,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8464208676509251,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8463676443335953,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8463246517361974,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.846238207324416,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8461188654115834,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8461112779358314,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8461028204595537,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8460941917029862,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8460855576155629,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.846079154341378,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8460471328529152,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8460445590736004,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8460176991010783,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8458094506233088,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8456592834410942,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8456356359278571,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8455654801838615,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8455324945113346,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8454512410275106,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.845390936411568,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8453687934668112,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8453480178663361,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.845303641815156,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8452641741669317,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8451710332115024,
+      "members": [
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8451705164054616,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.845095874062789,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8450192366083956,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.844989672970789,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8449602379648482,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.844956546761939,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8448947061855131,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.844779776408968,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8447565805391654,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8447454872952221,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8447396099589408,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8446911939451619,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8446119653018376,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8445591599523729,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8445520983377355,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8445393242238817,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8445225901240955,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8444713323017078,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8443695705269408,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8443444258109223,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.844299432912488,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8440067965624571,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8439602321260026,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8437032600690736,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8436388265022978,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8436377776177263,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8436204556982004,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8434983799781895,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8434694067753251,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.843436694064207,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8431976646306243,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8431512356372047,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8431213647303664,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8431095805220927,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8431068229944167,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8430709200424441,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8430285387609721,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8429940575564849,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8428827316928711,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8427313534720725,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8427154791332998,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8425656207308428,
+      "members": [
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.842498768397714,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8424787933509698,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8424573109193411,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8424441057008745,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8424226601213046,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8422390744756741,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.842229617692701,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8421773235442364,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8421152763131833,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.842076451278119,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8420448854904076,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8419481125801062,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8419320715463635,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8419101251329056,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8418699035627969,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8417141840513088,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8416058153879745,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8415925042945337,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8415668995994148,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8415108353095097,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8414758536263807,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8414215048131806,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8413588825139771,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8412675102795705,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8412396216342977,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8410597941688758,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8410483100432415,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8409738867759137,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8409519762393627,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8408484322342153,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8408364219745929,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8406279077727152,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8405093473520531,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8404886762940927,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8403793875299507,
+      "members": [
+        "ft__effb3_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8403788322944227,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.840250966755904,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8402423419559173,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8402022034022755,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8401854266993287,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8401213335096558,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8400775302423519,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8398619193397336,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8398069697685061,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8397629163105368,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8397565719806752,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8397429686722688,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.839551221596026,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8394635657271019,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8394481050264958,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8394059144120001,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8390175720455488,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8389629446216409,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8387651033342111,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8385506125232726,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8383781710461897,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8383022304778014,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8382168203225717,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8381826972045783,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8381755084461191,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8381463900522956,
+      "members": [
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.838118942231958,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8380046219972899,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8379705914091721,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8379498062958023,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8376311077941816,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8376166139501557,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8375595613746363,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8375197426553932,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8373933656153046,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8373739215089366,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8373125454466672,
+      "members": [
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8371148771119143,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8370696249308519,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.836732389215115,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.836689345104619,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8366469551688246,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8364990743374214,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8364204491181626,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8363259503136753,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8361438711307692,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8360933026527603,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8360279860387765,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8356422723324682,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8355007431552095,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8354531236790972,
+      "members": [
+        "ft__densenet_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8353735146585713,
+      "members": [
+        "ft__effb3_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8353479185384689,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8352763276474149,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8350031851753914,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8349607471017974,
+      "members": [
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8349500895344634,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8344444019005596,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8344365235705351,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8342087693158831,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8340353193058743,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8338906296164671,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8338888891630385,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8338101314113553,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8337896656434518,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8337218378101546,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8336113013239098,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8336076212756575,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8333891369489411,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8333251374041359,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8330621149726483,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8328477732224915,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8327208191279512,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.832505948442907,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8323350484177311,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8321697404728751,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8321623221126796,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.832116201077438,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8317271811061188,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8316330927057596,
+      "members": [
+        "ft__effb3_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8311512379447578,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8311371370574206,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.830936198846017,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8307950741714308,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8307081257036772,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8305442557460877,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8304737428235336,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8302469326436368,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8301447101088391,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8301167361890505,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8298370722066292,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8296707122116379,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8295744098983989,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8291148529376255,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8289080692659688,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8288481364664483,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8287603674001286,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8284817983284668,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8284248346568868,
+      "members": [
+        "ft__effb3_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8282010565994807,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8281594430130027,
+      "members": [
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8280097533507823,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8278015602618434,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8276781216510481,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8275280903324479,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.827255415540415,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8272488201021512,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8271226425299933,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8267765008717686,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8264642388415782,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8264418616039183,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.826200653107052,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8259298121175914,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8258976872539165,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8246368229185475,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8242789140162032,
+      "members": [
+        "ft__densenet_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8241561707903724,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8236688109581284,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8228727166250175,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.822369079612083,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8216905478191265,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8214013639188554,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8213581277843977,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8204280826569086,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos",
+        "tune__effb3_se__res512__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8203108298567683,
+      "members": [
+        "ft__resnet50_reg__aptos",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8199089797968031,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "resnet50_rf__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8196088499739155,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8175641934441353,
+      "members": [
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8169494081693608,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8167435628053293,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8167021021808711,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__densenet_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8165783621706343,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42",
+        "tune__densenet169__focal__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8152505401261189,
+      "members": [
+        "ft__densenet_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8142059929106766,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8121461719280764,
+      "members": [
+        "ft__densenet_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8114498418331109,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.811372162169874,
+      "members": [
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8107530315102811,
+      "members": [
+        "ft__effb3_reg__aptos"
+      ],
+      "mode": "argmax"
+    },
+    {
+      "score": 0.8099286594656551,
+      "members": [
+        "ft__resnet50_cls__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8083401619484363,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8083319428921044,
+      "members": [
+        "ft__densenet_cls__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.8058536449862057,
+      "members": [
+        "ft__densenet_reg__aptos",
+        "ft__resnet50_cls__aptos",
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.7961640779918179,
+      "members": [
+        "inception_v3__aptos__5class__raw_384_s42"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.7929088713560294,
+      "members": [
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "thr"
+    },
+    {
+      "score": 0.7867615236459415,
+      "members": [
+        "ft__resnet50_reg__aptos"
+      ],
+      "mode": "argmax"
+    }
+  ]
+}

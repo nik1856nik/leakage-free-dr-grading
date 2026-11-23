@@ -1,0 +1,13 @@
+dup_cluster,uid,label,official_split,group,label_conflict
+idrid/train_IDRiD_021,idrid/train_IDRiD_021,1,train,idrid/train_IDRiD_021,True
+idrid/train_IDRiD_021,idrid/train_IDRiD_391,2,train,idrid/train_IDRiD_391,True
+idrid/train_IDRiD_028,idrid/train_IDRiD_028,4,train,idrid/train_IDRiD_028,True
+idrid/train_IDRiD_028,idrid/train_IDRiD_327,3,train,idrid/train_IDRiD_327,True
+idrid/train_IDRiD_045,idrid/train_IDRiD_045,2,train,idrid/train_IDRiD_045,False
+idrid/train_IDRiD_045,idrid/train_IDRiD_333,2,train,idrid/train_IDRiD_333,False
+idrid/train_IDRiD_073,idrid/train_IDRiD_073,2,train,idrid/train_IDRiD_073,False
+idrid/train_IDRiD_073,idrid/train_IDRiD_375,2,train,idrid/train_IDRiD_375,False
+idrid/train_IDRiD_079,idrid/train_IDRiD_079,1,train,idrid/train_IDRiD_079,False
+idrid/train_IDRiD_079,idrid/train_IDRiD_279,1,train,idrid/train_IDRiD_279,False
+idrid/train_IDRiD_118,idrid/train_IDRiD_118,0,train,idrid/train_IDRiD_118,True
+idrid/train_IDRiD_118,idrid/test_IDRiD_064,3,test,idrid/test_IDRiD_064,True

@@ -1,0 +1,44 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/karthii/Desktop/idse/letsdo/DR_Detection/src/training/engine.py:185: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  sched.step()
+[vit_b16__aptos__5class__raw_224_s42] ep 01 loss 1.1973 acc 0.637 | val acc 0.7710 mF1 0.3869 qwk 0.8075 auc 0.9218 | 30s *
+[vit_b16__aptos__5class__raw_224_s42] ep 02 loss 0.9020 acc 0.748 | val acc 0.7443 mF1 0.4674 qwk 0.8019 auc 0.9265 | 30s *
+[vit_b16__aptos__5class__raw_224_s42] ep 03 loss 0.8227 acc 0.767 | val acc 0.8111 mF1 0.5909 qwk 0.8675 auc 0.9475 | 30s *
+[vit_b16__aptos__5class__raw_224_s42] ep 04 loss 0.7820 acc 0.771 | val acc 0.8340 mF1 0.6479 qwk 0.8863 auc 0.9555 | 30s *
+[vit_b16__aptos__5class__raw_224_s42] ep 05 loss 0.7446 acc 0.789 | val acc 0.8378 mF1 0.6582 qwk 0.8923 auc 0.9503 | 30s *
+[vit_b16__aptos__5class__raw_224_s42] ep 06 loss 0.7043 acc 0.798 | val acc 0.8397 mF1 0.6229 qwk 0.8788 auc 0.9527 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 07 loss 0.6933 acc 0.799 | val acc 0.8454 mF1 0.6121 qwk 0.8654 auc 0.9550 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 08 loss 0.6493 acc 0.815 | val acc 0.8473 mF1 0.6751 qwk 0.8723 auc 0.9548 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 09 loss 0.5906 acc 0.843 | val acc 0.8321 mF1 0.6848 qwk 0.8880 auc 0.9541 | 30s *
+[vit_b16__aptos__5class__raw_224_s42] ep 10 loss 0.5866 acc 0.840 | val acc 0.8206 mF1 0.6496 qwk 0.8775 auc 0.9472 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 11 loss 0.5450 acc 0.845 | val acc 0.8168 mF1 0.6454 qwk 0.8650 auc 0.9501 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 12 loss 0.5025 acc 0.861 | val acc 0.8340 mF1 0.6706 qwk 0.8882 auc 0.9560 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 13 loss 0.4710 acc 0.870 | val acc 0.8244 mF1 0.6767 qwk 0.8634 auc 0.9427 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 14 loss 0.4401 acc 0.879 | val acc 0.8206 mF1 0.6787 qwk 0.8687 auc 0.9473 | 31s
+[vit_b16__aptos__5class__raw_224_s42] ep 15 loss 0.3552 acc 0.902 | val acc 0.8282 mF1 0.5972 qwk 0.8787 auc 0.9432 | 29s
+[vit_b16__aptos__5class__raw_224_s42] ep 16 loss 0.3767 acc 0.899 | val acc 0.8492 mF1 0.6746 qwk 0.9039 auc 0.9504 | 30s *
+[vit_b16__aptos__5class__raw_224_s42] ep 17 loss 0.2956 acc 0.914 | val acc 0.8359 mF1 0.6799 qwk 0.8971 auc 0.9480 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 18 loss 0.2459 acc 0.935 | val acc 0.8244 mF1 0.6643 qwk 0.9031 auc 0.9432 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 19 loss 0.2021 acc 0.944 | val acc 0.8378 mF1 0.6922 qwk 0.9043 auc 0.9466 | 30s *
+[vit_b16__aptos__5class__raw_224_s42] ep 20 loss 0.1576 acc 0.961 | val acc 0.8550 mF1 0.7270 qwk 0.9103 auc 0.9393 | 30s *
+[vit_b16__aptos__5class__raw_224_s42] ep 21 loss 0.1261 acc 0.968 | val acc 0.8454 mF1 0.7127 qwk 0.9040 auc 0.9435 | 29s
+[vit_b16__aptos__5class__raw_224_s42] ep 22 loss 0.0942 acc 0.977 | val acc 0.8473 mF1 0.7011 qwk 0.9064 auc 0.9359 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 23 loss 0.0721 acc 0.984 | val acc 0.8435 mF1 0.7062 qwk 0.8957 auc 0.9303 | 29s
+[vit_b16__aptos__5class__raw_224_s42] ep 24 loss 0.0385 acc 0.991 | val acc 0.8550 mF1 0.7312 qwk 0.8948 auc 0.9301 | 29s
+[vit_b16__aptos__5class__raw_224_s42] ep 25 loss 0.0367 acc 0.991 | val acc 0.8435 mF1 0.7071 qwk 0.8961 auc 0.9227 | 29s
+[vit_b16__aptos__5class__raw_224_s42] ep 26 loss 0.0264 acc 0.995 | val acc 0.8416 mF1 0.7122 qwk 0.9004 auc 0.9245 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 27 loss 0.0225 acc 0.994 | val acc 0.8492 mF1 0.7232 qwk 0.9068 auc 0.9218 | 30s
+[vit_b16__aptos__5class__raw_224_s42] ep 28 loss 0.0154 acc 0.996 | val acc 0.8473 mF1 0.7223 qwk 0.9052 auc 0.9260 | 29s
+early stop at epoch 28 (best 20)
+{
+  "run_name": "vit_b16__aptos__5class__raw_224_s42",
+  "best_epoch": 20,
+  "train_time_s": 836.6697363853455,
+  "params": 85802501,
+  "val": {
+    "accuracy": 0.855,
+    "macro_f1": 0.727,
+    "qwk": 0.9103,
+    "roc_auc": 0.9393
+  }
+}

@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+train: X (24586, 2048)  (4.2 ms/img feature extraction)
+val: X (5268, 2048)  (4.4 ms/img feature extraction)
+  {'n_estimators': 100, 'class_weight': None}  val acc 0.8385 mF1 0.5573 qwk 0.7611 -> 0.6592
+  {'n_estimators': 100, 'class_weight': 'balanced_subsample'}  val acc 0.8385 mF1 0.5415 qwk 0.7575 -> 0.6495
+  {'n_estimators': 300, 'class_weight': None}  val acc 0.8398 mF1 0.5591 qwk 0.7644 -> 0.6617
+  {'n_estimators': 300, 'class_weight': 'balanced_subsample'}  val acc 0.8394 mF1 0.5574 qwk 0.7620 -> 0.6597
+  {'n_estimators': 500, 'class_weight': None}  val acc 0.8411 mF1 0.5608 qwk 0.7673 -> 0.6641
+  {'n_estimators': 500, 'class_weight': 'balanced_subsample'}  val acc 0.8388 mF1 0.5496 qwk 0.7594 -> 0.6545
+best: {'n_estimators': 500, 'class_weight': None}
+{"run_name": "resnet50_rf__eyepacs__5class", "classifier_params": {"n_estimators": 500, "class_weight": null}}
+val {'accuracy': 0.8411, 'macro_f1': 0.5608, 'qwk': 0.7673, 'roc_auc': 0.8917}

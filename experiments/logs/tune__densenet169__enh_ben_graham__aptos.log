@@ -1,0 +1,32 @@
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/albumentations/check_version.py:147: UserWarning: Error fetching version info <urlopen error _ssl.c:994: The handshake operation timed out>
+  data = fetch_version_info()
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[tune__densenet169__enh_ben_graham__aptos] ep 01 loss 1.0447 acc 0.667 | val acc 0.7996 mF1 0.6266 qwk 0.8743 auc 0.9347 | 159s *
+[tune__densenet169__enh_ben_graham__aptos] ep 02 loss 0.8476 acc 0.750 | val acc 0.7710 mF1 0.5317 qwk 0.8449 auc 0.9464 | 48s
+[tune__densenet169__enh_ben_graham__aptos] ep 03 loss 0.7311 acc 0.784 | val acc 0.7767 mF1 0.4788 qwk 0.7915 auc 0.9306 | 48s
+[tune__densenet169__enh_ben_graham__aptos] ep 04 loss 0.7635 acc 0.772 | val acc 0.8492 mF1 0.6169 qwk 0.9033 auc 0.9573 | 49s *
+[tune__densenet169__enh_ben_graham__aptos] ep 05 loss 0.6720 acc 0.803 | val acc 0.8244 mF1 0.6384 qwk 0.8657 auc 0.9522 | 49s
+[tune__densenet169__enh_ben_graham__aptos] ep 06 loss 0.6534 acc 0.806 | val acc 0.8378 mF1 0.6854 qwk 0.9148 auc 0.9490 | 49s *
+[tune__densenet169__enh_ben_graham__aptos] ep 07 loss 0.6616 acc 0.811 | val acc 0.8302 mF1 0.6860 qwk 0.8881 auc 0.9572 | 49s
+[tune__densenet169__enh_ben_graham__aptos] ep 08 loss 0.6207 acc 0.826 | val acc 0.8740 mF1 0.7413 qwk 0.9208 auc 0.9596 | 49s *
+[tune__densenet169__enh_ben_graham__aptos] ep 09 loss 0.6015 acc 0.831 | val acc 0.8340 mF1 0.7042 qwk 0.9117 auc 0.9582 | 49s
+[tune__densenet169__enh_ben_graham__aptos] ep 10 loss 0.5924 acc 0.827 | val acc 0.8664 mF1 0.7204 qwk 0.9195 auc 0.9541 | 49s
+[tune__densenet169__enh_ben_graham__aptos] ep 11 loss 0.5846 acc 0.840 | val acc 0.8626 mF1 0.7223 qwk 0.9225 auc 0.9553 | 49s
+[tune__densenet169__enh_ben_graham__aptos] ep 12 loss 0.5725 acc 0.838 | val acc 0.8588 mF1 0.7064 qwk 0.8921 auc 0.9488 | 49s
+[tune__densenet169__enh_ben_graham__aptos] ep 13 loss 0.5429 acc 0.849 | val acc 0.8435 mF1 0.7165 qwk 0.9109 auc 0.9556 | 49s
+[tune__densenet169__enh_ben_graham__aptos] ep 14 loss 0.5123 acc 0.849 | val acc 0.8626 mF1 0.7156 qwk 0.9058 auc 0.9581 | 49s
+[tune__densenet169__enh_ben_graham__aptos] ep 15 loss 0.5004 acc 0.852 | val acc 0.8683 mF1 0.7207 qwk 0.9185 auc 0.9595 | 49s
+[tune__densenet169__enh_ben_graham__aptos] ep 16 loss 0.5026 acc 0.854 | val acc 0.8588 mF1 0.6752 qwk 0.8954 auc 0.9573 | 50s
+early stop at epoch 16 (best 8)
+{
+  "run_name": "tune__densenet169__enh_ben_graham__aptos",
+  "best_epoch": 8,
+  "train_time_s": 894.1218709945679,
+  "params": 12492805,
+  "val": {
+    "accuracy": 0.874,
+    "macro_f1": 0.7413,
+    "qwk": 0.9208,
+    "roc_auc": 0.9596
+  }
+}

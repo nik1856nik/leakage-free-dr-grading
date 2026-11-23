@@ -1,0 +1,43 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[densenet169__aptos__5class__raw_384_s42] ep 01 loss 1.0654 acc 0.667 | val acc 0.7824 mF1 0.5518 qwk 0.8344 auc 0.9175 | 150s *
+[densenet169__aptos__5class__raw_384_s42] ep 02 loss 0.8507 acc 0.751 | val acc 0.6794 mF1 0.4359 qwk 0.7607 auc 0.8820 | 37s
+[densenet169__aptos__5class__raw_384_s42] ep 03 loss 0.7722 acc 0.773 | val acc 0.8111 mF1 0.5222 qwk 0.8583 auc 0.9507 | 39s
+[densenet169__aptos__5class__raw_384_s42] ep 04 loss 0.7600 acc 0.783 | val acc 0.8359 mF1 0.6060 qwk 0.8948 auc 0.9510 | 39s *
+[densenet169__aptos__5class__raw_384_s42] ep 05 loss 0.6968 acc 0.803 | val acc 0.8378 mF1 0.6807 qwk 0.8953 auc 0.9553 | 40s *
+[densenet169__aptos__5class__raw_384_s42] ep 06 loss 0.6729 acc 0.803 | val acc 0.8454 mF1 0.6679 qwk 0.9082 auc 0.9584 | 39s *
+[densenet169__aptos__5class__raw_384_s42] ep 07 loss 0.6965 acc 0.813 | val acc 0.8435 mF1 0.7102 qwk 0.9036 auc 0.9627 | 40s *
+[densenet169__aptos__5class__raw_384_s42] ep 08 loss 0.6319 acc 0.823 | val acc 0.8321 mF1 0.6883 qwk 0.8829 auc 0.9525 | 39s
+[densenet169__aptos__5class__raw_384_s42] ep 09 loss 0.6078 acc 0.830 | val acc 0.8550 mF1 0.7207 qwk 0.9178 auc 0.9559 | 40s *
+[densenet169__aptos__5class__raw_384_s42] ep 10 loss 0.6074 acc 0.824 | val acc 0.8454 mF1 0.6794 qwk 0.8987 auc 0.9507 | 39s
+[densenet169__aptos__5class__raw_384_s42] ep 11 loss 0.6001 acc 0.831 | val acc 0.8626 mF1 0.7162 qwk 0.9259 auc 0.9515 | 40s *
+[densenet169__aptos__5class__raw_384_s42] ep 12 loss 0.5847 acc 0.835 | val acc 0.8511 mF1 0.7022 qwk 0.9034 auc 0.9557 | 40s
+[densenet169__aptos__5class__raw_384_s42] ep 13 loss 0.5513 acc 0.837 | val acc 0.8721 mF1 0.7619 qwk 0.9242 auc 0.9638 | 40s *
+[densenet169__aptos__5class__raw_384_s42] ep 14 loss 0.5499 acc 0.839 | val acc 0.8702 mF1 0.7442 qwk 0.9177 auc 0.9623 | 40s
+[densenet169__aptos__5class__raw_384_s42] ep 15 loss 0.5241 acc 0.847 | val acc 0.8626 mF1 0.7410 qwk 0.9161 auc 0.9630 | 40s
+[densenet169__aptos__5class__raw_384_s42] ep 16 loss 0.5067 acc 0.859 | val acc 0.8550 mF1 0.6951 qwk 0.9138 auc 0.9607 | 40s
+[densenet169__aptos__5class__raw_384_s42] ep 17 loss 0.4774 acc 0.869 | val acc 0.8760 mF1 0.7585 qwk 0.9320 auc 0.9610 | 39s *
+[densenet169__aptos__5class__raw_384_s42] ep 18 loss 0.4500 acc 0.872 | val acc 0.8702 mF1 0.7489 qwk 0.9178 auc 0.9664 | 40s
+[densenet169__aptos__5class__raw_384_s42] ep 19 loss 0.4480 acc 0.875 | val acc 0.8511 mF1 0.7189 qwk 0.9139 auc 0.9599 | 40s
+[densenet169__aptos__5class__raw_384_s42] ep 20 loss 0.4087 acc 0.883 | val acc 0.8607 mF1 0.7394 qwk 0.9242 auc 0.9600 | 40s
+[densenet169__aptos__5class__raw_384_s42] ep 21 loss 0.3685 acc 0.899 | val acc 0.8740 mF1 0.7459 qwk 0.9231 auc 0.9603 | 40s
+[densenet169__aptos__5class__raw_384_s42] ep 22 loss 0.3600 acc 0.896 | val acc 0.8626 mF1 0.7206 qwk 0.9054 auc 0.9589 | 40s
+[densenet169__aptos__5class__raw_384_s42] ep 23 loss 0.3121 acc 0.915 | val acc 0.8760 mF1 0.7644 qwk 0.9327 auc 0.9587 | 40s *
+[densenet169__aptos__5class__raw_384_s42] ep 24 loss 0.2990 acc 0.919 | val acc 0.8645 mF1 0.7501 qwk 0.9286 auc 0.9597 | 40s
+[densenet169__aptos__5class__raw_384_s42] ep 25 loss 0.2993 acc 0.919 | val acc 0.8645 mF1 0.7491 qwk 0.9256 auc 0.9587 | 39s
+[densenet169__aptos__5class__raw_384_s42] ep 26 loss 0.2785 acc 0.918 | val acc 0.8683 mF1 0.7506 qwk 0.9331 auc 0.9581 | 39s
+[densenet169__aptos__5class__raw_384_s42] ep 27 loss 0.2499 acc 0.932 | val acc 0.8683 mF1 0.7436 qwk 0.9330 auc 0.9568 | 39s
+[densenet169__aptos__5class__raw_384_s42] ep 28 loss 0.2750 acc 0.926 | val acc 0.8683 mF1 0.7406 qwk 0.9306 auc 0.9563 | 39s
+[densenet169__aptos__5class__raw_384_s42] ep 29 loss 0.2467 acc 0.933 | val acc 0.8702 mF1 0.7418 qwk 0.9323 auc 0.9576 | 39s
+[densenet169__aptos__5class__raw_384_s42] ep 30 loss 0.2491 acc 0.927 | val acc 0.8721 mF1 0.7513 qwk 0.9314 auc 0.9586 | 40s
+{
+  "run_name": "densenet169__aptos__5class__raw_384_s42",
+  "best_epoch": 23,
+  "train_time_s": 1297.545553445816,
+  "params": 12492805,
+  "val": {
+    "accuracy": 0.876,
+    "macro_f1": 0.7644,
+    "qwk": 0.9327,
+    "roc_auc": 0.9587
+  }
+}

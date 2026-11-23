@@ -1,0 +1,28 @@
+init_from: _IncompatibleKeys(missing_keys=['fc.weight', 'fc.bias'], unexpected_keys=[])
+[ft__effb3_reg__aptos] ep 01 loss 0.7169 acc 0.394 | val acc 0.7653 mF1 0.5603 qwk 0.8898 auc 0.9126 | 152s *
+[ft__effb3_reg__aptos] ep 02 loss 0.1653 acc 0.729 | val acc 0.8053 mF1 0.5628 qwk 0.9091 auc 0.9168 | 57s *
+[ft__effb3_reg__aptos] ep 03 loss 0.1254 acc 0.780 | val acc 0.8073 mF1 0.6135 qwk 0.9057 auc 0.9021 | 58s *
+[ft__effb3_reg__aptos] ep 04 loss 0.1057 acc 0.813 | val acc 0.8244 mF1 0.6398 qwk 0.9231 auc 0.9351 | 58s *
+[ft__effb3_reg__aptos] ep 05 loss 0.0939 acc 0.821 | val acc 0.8130 mF1 0.5960 qwk 0.9171 auc 0.9318 | 58s
+[ft__effb3_reg__aptos] ep 06 loss 0.0829 acc 0.837 | val acc 0.8092 mF1 0.6286 qwk 0.9187 auc 0.9049 | 58s
+[ft__effb3_reg__aptos] ep 07 loss 0.0792 acc 0.845 | val acc 0.8321 mF1 0.6417 qwk 0.9200 auc 0.9377 | 58s
+[ft__effb3_reg__aptos] ep 08 loss 0.0691 acc 0.866 | val acc 0.8225 mF1 0.6605 qwk 0.9332 auc 0.9257 | 58s *
+[ft__effb3_reg__aptos] ep 09 loss 0.0647 acc 0.872 | val acc 0.8130 mF1 0.6399 qwk 0.9163 auc 0.9193 | 58s
+[ft__effb3_reg__aptos] ep 10 loss 0.0606 acc 0.876 | val acc 0.8111 mF1 0.6151 qwk 0.9222 auc 0.9235 | 59s
+[ft__effb3_reg__aptos] ep 11 loss 0.0537 acc 0.897 | val acc 0.8111 mF1 0.5987 qwk 0.9134 auc 0.9256 | 59s
+[ft__effb3_reg__aptos] ep 12 loss 0.0526 acc 0.896 | val acc 0.8092 mF1 0.6071 qwk 0.9042 auc 0.9218 | 58s
+[ft__effb3_reg__aptos] ep 13 loss 0.0543 acc 0.888 | val acc 0.8111 mF1 0.6033 qwk 0.9047 auc 0.9249 | 58s
+[ft__effb3_reg__aptos] ep 14 loss 0.0496 acc 0.909 | val acc 0.8187 mF1 0.6206 qwk 0.9096 auc 0.9230 | 59s
+early stop at epoch 14 (best 8)
+{
+  "run_name": "ft__effb3_reg__aptos",
+  "best_epoch": 8,
+  "train_time_s": 908.29558634758,
+  "params": 10994313,
+  "val": {
+    "accuracy": 0.8225,
+    "macro_f1": 0.6605,
+    "qwk": 0.9332,
+    "roc_auc": 0.9257
+  }
+}

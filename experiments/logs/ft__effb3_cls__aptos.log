@@ -1,0 +1,27 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+init_from: <All keys matched successfully>
+/home/karthii/Desktop/idse/letsdo/DR_Detection/src/training/engine.py:221: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  sched.step()
+[ft__effb3_cls__aptos] ep 01 loss 0.9272 acc 0.769 | val acc 0.8435 mF1 0.7100 qwk 0.9119 auc 0.9350 | 152s *
+[ft__effb3_cls__aptos] ep 02 loss 0.5803 acc 0.831 | val acc 0.8588 mF1 0.7224 qwk 0.9370 auc 0.9577 | 57s *
+[ft__effb3_cls__aptos] ep 03 loss 0.5010 acc 0.855 | val acc 0.8531 mF1 0.7221 qwk 0.9183 auc 0.9586 | 58s
+[ft__effb3_cls__aptos] ep 04 loss 0.4692 acc 0.865 | val acc 0.8760 mF1 0.7481 qwk 0.9286 auc 0.9596 | 58s *
+[ft__effb3_cls__aptos] ep 05 loss 0.4238 acc 0.879 | val acc 0.8683 mF1 0.7418 qwk 0.9266 auc 0.9605 | 58s
+[ft__effb3_cls__aptos] ep 06 loss 0.3763 acc 0.898 | val acc 0.8492 mF1 0.7175 qwk 0.9277 auc 0.9579 | 59s
+[ft__effb3_cls__aptos] ep 07 loss 0.3550 acc 0.904 | val acc 0.8664 mF1 0.7357 qwk 0.9264 auc 0.9597 | 60s
+[ft__effb3_cls__aptos] ep 08 loss 0.3288 acc 0.904 | val acc 0.8664 mF1 0.7498 qwk 0.9191 auc 0.9598 | 59s
+[ft__effb3_cls__aptos] ep 09 loss 0.3045 acc 0.917 | val acc 0.8683 mF1 0.7323 qwk 0.9265 auc 0.9613 | 58s
+[ft__effb3_cls__aptos] ep 10 loss 0.2686 acc 0.929 | val acc 0.8607 mF1 0.7280 qwk 0.9179 auc 0.9575 | 58s
+early stop at epoch 10 (best 4)
+{
+  "run_name": "ft__effb3_cls__aptos",
+  "best_epoch": 4,
+  "train_time_s": 676.4627919197083,
+  "params": 11000461,
+  "val": {
+    "accuracy": 0.876,
+    "macro_f1": 0.7481,
+    "qwk": 0.9286,
+    "roc_auc": 0.9596
+  }
+}

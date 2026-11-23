@@ -1,0 +1,28 @@
+/home/karthii/Desktop/idse/letsdo/DR_Detection/.venv/lib/python3.12/site-packages/albumentations/check_version.py:147: UserWarning: Error fetching version info <urlopen error _ssl.c:994: The handshake operation timed out>
+  data = fetch_version_info()
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[tune__effb3_se__enh_raw__aptos] ep 01 loss 1.1960 acc 0.636 | val acc 0.7901 mF1 0.4744 qwk 0.8101 auc 0.9297 | 122s *
+[tune__effb3_se__enh_raw__aptos] ep 02 loss 0.7850 acc 0.780 | val acc 0.8492 mF1 0.7335 qwk 0.9070 auc 0.9555 | 35s *
+[tune__effb3_se__enh_raw__aptos] ep 03 loss 0.6551 acc 0.805 | val acc 0.8263 mF1 0.6797 qwk 0.9079 auc 0.9569 | 35s
+[tune__effb3_se__enh_raw__aptos] ep 04 loss 0.5973 acc 0.839 | val acc 0.8607 mF1 0.7188 qwk 0.9229 auc 0.9545 | 35s *
+[tune__effb3_se__enh_raw__aptos] ep 05 loss 0.5384 acc 0.838 | val acc 0.8168 mF1 0.6449 qwk 0.8905 auc 0.9475 | 35s
+[tune__effb3_se__enh_raw__aptos] ep 06 loss 0.4823 acc 0.862 | val acc 0.8473 mF1 0.7284 qwk 0.8933 auc 0.9546 | 35s
+[tune__effb3_se__enh_raw__aptos] ep 07 loss 0.4403 acc 0.873 | val acc 0.8626 mF1 0.6875 qwk 0.9165 auc 0.9613 | 35s
+[tune__effb3_se__enh_raw__aptos] ep 08 loss 0.3737 acc 0.894 | val acc 0.8435 mF1 0.6744 qwk 0.8971 auc 0.9503 | 35s
+[tune__effb3_se__enh_raw__aptos] ep 09 loss 0.3348 acc 0.905 | val acc 0.8416 mF1 0.6860 qwk 0.8924 auc 0.9441 | 35s
+[tune__effb3_se__enh_raw__aptos] ep 10 loss 0.2781 acc 0.917 | val acc 0.8378 mF1 0.7022 qwk 0.9040 auc 0.9616 | 35s
+[tune__effb3_se__enh_raw__aptos] ep 11 loss 0.2300 acc 0.938 | val acc 0.8531 mF1 0.7045 qwk 0.8986 auc 0.9544 | 35s
+[tune__effb3_se__enh_raw__aptos] ep 12 loss 0.2023 acc 0.944 | val acc 0.8378 mF1 0.7007 qwk 0.9113 auc 0.9563 | 35s
+early stop at epoch 12 (best 4)
+{
+  "run_name": "tune__effb3_se__enh_raw__aptos",
+  "best_epoch": 4,
+  "train_time_s": 507.3016517162323,
+  "params": 11000461,
+  "val": {
+    "accuracy": 0.8607,
+    "macro_f1": 0.7188,
+    "qwk": 0.9229,
+    "roc_auc": 0.9545
+  }
+}
