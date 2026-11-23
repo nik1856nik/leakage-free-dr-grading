@@ -1,26 +1,90 @@
 # Leakage-Free Diabetic Retinopathy Grading
 
 Reproduction of 10 diabetic-retinopathy (DR) models from a 15-paper literature survey, plus a validation-selected
-ensemble for **five-class ICDR severity grading**. Everything is in PyTorch and uses only genuine fundus photographs
-with their original grades: no synthetic or GAN images and no generated labels.
+ensemble for **five-class ICDR severity grading** (No DR, Mild, Moderate, Severe, Proliferative DR).
 
-Hyperparameters, ensemble members and grade thresholds were all fixed on validation data. Each test split was then
-evaluated **exactly once**.
+Everything is in PyTorch and uses only genuine fundus photographs with their original grades: no synthetic or GAN
+images and no generated labels. Hyperparameters, ensemble members and grade thresholds were all fixed on validation
+data. Each test split was then evaluated **exactly once**.
 
 **Authors:** Akshai Krishna KP, Mohammed Azhar Sait, Karthik Krishna K, Rohit A.
 
 | Read this | What it is |
 |---|---|
-| [`paper/main.pdf`](paper/main.pdf) | IEEE-format paper (14 pages): [`paper/main.pdf`](paper/main.pdf) |
+| [`notebooks/DR_full_pipeline.ipynb`](notebooks/DR_full_pipeline.ipynb) | **The whole project, step by step, in one notebook**: every stage in order, with explanations and outputs |
+| [`paper/main.pdf`](paper/main.pdf) | IEEE-format paper (14 pages) |
 | [`reports/final_report.md`](reports/final_report.md) | Complete results, discussion and limitations |
-| [`reports/replication_guide.md`](reports/replication_guide.md) | Step-by-step reproduction, with the reason for each decision |
+| [`reports/replication_guide.md`](reports/replication_guide.md) | Every command, with the reason for each decision |
 | [`docs/literature_survey.pdf`](docs/literature_survey.pdf) | The 15-paper survey the models were taken from |
+| [Release v1.0](https://github.com/nik1856nik/leakage-free-dr-grading/releases/tag/v1.0) | Trained ensemble weights (4 × `.pt`) + checksums |
 
 ---
 
-## Results
+## Headline results
 
-### Final ensemble: APTOS 2019, five classes
+| APTOS 2019 test (n = 525, evaluated once) | Value [95% bootstrap CI] |
+|---|---|
+| Accuracy | **0.846** [0.815–0.874] |
+| Quadratic weighted kappa (QWK) | **0.931** [0.913–0.947] |
+| Macro-F1 | 0.683 [0.626–0.734] |
+| Referable DR (grade ≥ 2) | sensitivity **0.961** · specificity **0.919** · AUC **0.984** |
+
+| External dataset (never used for training or selection) | Accuracy | QWK | Referable-DR AUC (sens / spec) |
+|---|---|---|---|
+| IDRiD (508 images) | 0.593 | 0.819 | 0.976 (0.81 / 0.995) |
+| Messidor-2 (1,740 images) | 0.661 | 0.725 | 0.948 (0.45 / 0.995) |
+
+---
+
+## Datasets (official sources)
+
+| Dataset | Images | Role here | Official source |
+|---|---|---|---|
+| **APTOS 2019 Blindness Detection** | 3,662 | train / validation / test | [Kaggle competition](https://www.kaggle.com/competitions/aptos2019-blindness-detection) |
+| **EyePACS** (Kaggle Diabetic Retinopathy Detection, 2015) | 35,126 | pretraining, cross-dataset | [Kaggle competition](https://www.kaggle.com/competitions/diabetic-retinopathy-detection) |
+| **IDRiD** (Indian Diabetic Retinopathy Image Dataset) | 516 | external test | [IEEE DataPort](https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid) |
+| **Messidor-2** | 1,748 | external test | Images: [ADCIS](https://www.adcis.net/en/third-party/messidor2/) (licence form) · Grades: [Kaggle `google-brain/messidor2-dr-grades`](https://www.kaggle.com/datasets/google-brain/messidor2-dr-grades) |
+
+The datasets are **not** included in this repository; their licences forbid redistribution. See
+[`reports/dataset_status.md`](reports/dataset_status.md) for the download steps.
+
+![Example fundus images for each ICDR grade](paper/figures/fig_grades.png)
+
+---
+
+## Method
+
+![Pipeline](paper/figures/fig_pipeline.png)
+
+1. **Duplicate audit (leakage control).**
+   - Near-duplicate photos are found by green-channel high-pass correlation inside the retina, at r ≥ 0.99.
+   - Copies with conflicting grades are excluded: 79 images in APTOS and 4 in IDRiD.
+   - Same-grade copies are collapsed to one image.
+2. **Grouped splits.** The split is 70/15/15, stratified, seed 42, and grouped:
+   - by patient for EyePACS;
+   - by exam for Messidor-2;
+   - by duplicate cluster for APTOS.
+
+   No group crosses two splits. IDRiD keeps its official test set.
+3. **Stage A, 10 paper baselines.** Each model uses paper-derived settings with shared splits and metrics.
+   The selection score is S = ½(QWK + macro-F1).
+4. **Stage B, tuning the top 3.** One factor is changed at a time, and every change is compared against the
+   run-to-run seed noise.
+5. **Stage D, EyePACS pretraining** of the top 3 architectures.
+6. **Stage E, APTOS fine-tuning** with two head types:
+   - a **classifier**;
+   - an ordinal **regressor** (SmoothL1 loss on the grade value).
+7. **Stage F, ensemble selection.**
+   - 770 candidates: every 1–4-model subset under two decision rules.
+   - Each candidate is scored with **3 × 5-fold cross-fitted grade thresholds** on validation only.
+8. **Stage G, one test evaluation.** APTOS test is scored once, plus IDRiD and Messidor-2 as external
+   datasets.
+
+![Preprocessing variants](paper/figures/fig_preproc.png)
+
+### The selected ensemble
+
+![Architectures](paper/figures/fig_arch.png)
 
 | Member | Initialisation | Input |
 |---|---|---|
@@ -30,36 +94,72 @@ evaluated **exactly once**.
 | DenseNet-169, classifier, focal loss | ImageNet → APTOS | 384 px, raw |
 
 How a prediction is made:
-- Each member gives a grade score, averaged over 4 flipped views.
+- Each member's grade score is averaged over 4 flipped views.
 - The four scores are averaged.
-- The average is cut at 4 thresholds fitted on validation: 0.64 / 1.51 / 2.74 / 3.09.
+- The average is cut at thresholds **0.64 / 1.51 / 2.74 / 3.09**, which were fitted on validation.
 
-The ensemble was chosen from 770 candidates by a repeated, cross-fitted validation score, S = ½(QWK + macro-F1).
+The total size is 56.3 M parameters and about 174 ms per image.
 
-| APTOS test (n = 525, evaluated once) | Value [95% bootstrap CI] |
+---
+
+## Results and figures
+
+### All reproduced models on APTOS test
+![Test comparison](paper/figures/fig_test_bars.png)
+
+The full table, with every metric and external IDRiD columns, is in [`reports/model_comparison.csv`](reports/model_comparison.csv).
+
+### Confusion matrix and referable-DR ROC (APTOS test)
+| | |
 |---|---|
-| Accuracy | **0.846** [0.815–0.874] |
-| Quadratic weighted kappa | **0.931** [0.913–0.947] |
-| Macro-F1 | 0.683 [0.626–0.734] |
-| Referable DR (grade ≥ 2) | sensitivity 0.961 · specificity 0.919 · AUC 0.984 |
+| ![Confusion matrix](paper/figures/fig_confusion_test.png) | ![ROC referable](paper/figures/fig_roc_referable.png) |
 
-### External datasets (never used for training or selection)
+### External datasets
+![External confusion matrices](paper/figures/fig_external_cm.png)
 
-| Dataset | Accuracy | QWK | Referable-DR AUC (sens / spec) |
-|---|---|---|---|
-| IDRiD (508) | 0.593 | 0.819 | 0.976 (0.81 / 0.995) |
-| Messidor-2 (1,740) | 0.661 | 0.725 | 0.948 (0.45 / 0.995) |
+### Ensemble selection and per-class performance
+| | |
+|---|---|
+| ![Selection](paper/figures/fig_selection.png) | ![Per class](paper/figures/fig_perclass.png) |
 
-The APTOS ensemble is over-conservative on Messidor-2 (low sensitivity there). EyePACS-trained models transfer much
-better: EfficientNet-B3+SE trained on EyePACS reaches AUC 0.967 on Messidor-2, with sensitivity 0.92 and
-specificity 0.85.
+### Duplicate audit
+![Duplicate examples](paper/figures/fig_duplicates.png)
 
-For context:
-- The best single model on the same test split is ResNet-50, at accuracy 0.861.
-- The ensemble's QWK gain over it is +0.019, which is not significant (McNemar p = 0.38).
+### Interpretability (Grad-CAM, EfficientNet-B3 member)
+![Grad-CAM](paper/figures/fig_gradcam.png)
 
-All 10 baselines are in [`reports/model_comparison.csv`](reports/model_comparison.csv). Full metrics are in
-[`experiments/best_aptos/final_metrics.json`](experiments/best_aptos/final_metrics.json).
+---
+
+## Observations
+
+1. **The ensemble ranks highest on QWK, but its lead over the best single model is not significant.**
+   - The ensemble scores QWK 0.931; ResNet-50, the best single model, scores 0.911.
+   - On exact accuracy ResNet-50 is slightly higher (0.861 vs 0.846).
+   - McNemar's test shows no significant difference (28 vs 36 discordant images, p = 0.38).
+   - The ensemble is kept because it was selected by the pre-declared validation rule. Switching after seeing
+     test results would be selection on the test set.
+2. **Tuning tweaks barely matter.**
+   - Resolution, preprocessing, focal loss and balanced sampling all changed the validation score by ±0.017 or
+     less.
+   - That is close to the seed noise (±0.005 std).
+   - Pretraining on more data, combined with ensembling different heads, was the lever that worked.
+3. **Referable-DR screening is strong in-domain.**
+   - Sensitivity is 0.961 and AUC 0.984 on APTOS test.
+   - All "No DR" vs "any DR" decisions are near-perfect.
+   - Most errors are between **neighbouring grades**, especially Mild or Severe predicted as Moderate. These
+     boundaries are also hard for human graders.
+4. **A new site shifts calibration more than discrimination.**
+   - On Messidor-2 the APTOS ensemble still ranks well (referable AUC 0.948).
+   - At the APTOS thresholds, however, it is far too conservative: referable sensitivity is only 0.45.
+   - **EyePACS-trained** models transfer much better (EffB3+SE: AUC 0.967, sensitivity 0.92), so training data
+     diversity matters more than architecture.
+   - Any clinical use would need per-site threshold recalibration.
+5. **Leakage control is necessary.**
+   - APTOS contains 148 near-duplicate pairs, and 79 images had conflicting grades.
+   - Without grouping, copies of the same photo can land in both train and test, which inflates the scores.
+6. **Several published models fall well short under a clean protocol.**
+   - The lightweight two-stage CNN (P10) reaches QWK 0.733, and MS-CNN+LSTM (P15) reaches 0.788.
+   - The strong numbers in their papers do not carry over to leakage-free grouped splits.
 
 ---
 
@@ -67,42 +167,30 @@ All 10 baselines are in [`reports/model_comparison.csv`](reports/model_compariso
 
 ```
 .
-├── configs/                 # per-paper model defaults, dataset notes, training protocol
-│   ├── models.yaml
-│   ├── datasets.yaml
-│   └── training.yaml
-├── src/                     # library code
-│   ├── preprocessing/retina.py   # retina crop, Ben Graham, CLAHE
-│   ├── datasets/            # dataset sources + FundusDataset
-│   ├── models/zoo.py        # the 10 reproduced architectures
-│   ├── training/engine.py   # training loop (AMP, CE / focal / regression heads)
-│   ├── evaluation/          # metrics, bootstrap CIs, plots
-│   └── ensemble/            # score averaging, thresholds
-├── scripts/                 # entry points
-│   ├── download_datasets.sh, prepare_data.py     # data download, 512 px cache, duplicate audit, grouped splits
-│   ├── train.py, train_features.py, run_two_stage.py
-│   ├── run_queue.sh, tune_queue.sh, tune_round2.sh, run_eyepacs.sh, run_best.sh
-│   ├── best_model.py, best_report.py            # ensemble selection (validation) + one-time test report
-│   ├── final_baselines.py, evaluate.py, compare_models.py
-│   ├── predict.py           # grade new images with the packaged ensemble
-│   └── model_status.py      # live progress views
+├── notebooks/
+│   ├── DR_full_pipeline.ipynb   # the whole project, in order, with explanations and outputs
+│   └── build_notebook.py        # generates the notebook (plain-Python source of its cells)
+├── configs/                     # per-paper model defaults (models.yaml), dataset and training notes
+├── src/                         # library code
+│   ├── preprocessing/retina.py  # retina crop, Ben Graham, CLAHE, AGC (P8)
+│   ├── datasets/                # dataset sources + FundusDataset
+│   ├── models/zoo.py            # the 10 reproduced architectures
+│   ├── training/engine.py       # training loop (AMP, CE / focal / regression heads)
+│   ├── evaluation/              # metrics, bootstrap CIs, plots
+│   └── ensemble/                # score averaging, thresholds
+├── scripts/                     # entry points: data prep, training queues, selection, evaluation, predict.py
 ├── data/
-│   ├── splits/              # train/val/test assignment per image (IDs + original grades)
-│   └── metadata/            # duplicate-audit clusters and pairs
-├── experiments/             # per-run config, history, summary, validation predictions
-│   └── best_aptos/          # selection.json, final_metrics.json, cached member predictions
-├── results/plots/           # per-run, comparison and best-model figures
-├── reports/                 # final report, replication guide, literature analysis, CSV tables
-├── best_model/model_card.json   # ensemble definition (weights: see below)
-├── paper/                   # LaTeX source, figures, compiled PDFs
+│   ├── splits/                  # train/val/test assignment per image (IDs + original grades)
+│   └── metadata/                # duplicate-audit clusters and pairs
+├── experiments/                 # per-run config, history, summary, predictions; best_aptos/ = final selection
+├── results/plots/               # per-run, comparison and best-model figures
+├── reports/                     # final report, replication guide, literature analysis, CSV tables
+├── best_model/model_card.json   # ensemble definition (weights: GitHub release v1.0)
+├── paper/                       # LaTeX source, figures, compiled PDFs
 ├── docs/literature_survey.pdf
-├── pyproject.toml, uv.lock  # uv-managed environment
+├── pyproject.toml, uv.lock      # uv-managed environment
 └── README.md
 ```
-
-These are **not in git**:
-- `data/raw/` and `data/processed/`: the datasets are licensed by their providers.
-- `checkpoints/` and `*.pt`: the weights are 44–88 MB each.
 
 ---
 
@@ -111,29 +199,13 @@ These are **not in git**:
 Requires Python 3.12 and an NVIDIA GPU with CUDA 12.8. The work was done on an RTX 4060 Laptop with 8 GB.
 
 ```bash
-git clone <this repo> && cd <repo>
-uv sync                     # installs torch 2.11 (cu128), timm, scikit-learn, grad-cam, …
+git clone https://github.com/nik1856nik/leakage-free-dr-grading.git && cd leakage-free-dr-grading
+uv sync                                   # torch 2.11 (cu128), timm, scikit-learn, grad-cam, jupyter ...
+gh release download v1.0 -D best_model    # trained weights
+(cd best_model && sha256sum -c SHA256SUMS.txt)
 ```
 
-### Datasets
-| Dataset | Source | Use |
-|---|---|---|
-| APTOS 2019 | Kaggle (`aptos2019-blindness-detection`) | train / val / test |
-| EyePACS | Kaggle (`diabetic-retinopathy-detection`) | pretraining, cross-dataset |
-| IDRiD | IEEE DataPort | external test |
-| Messidor-2 | ADCIS (manual request) + Kaggle grades | external test |
-
-Put your Kaggle API token in `~/.kaggle/`, then run `bash scripts/download_datasets.sh`. See
-[`reports/dataset_status.md`](reports/dataset_status.md) for the manual steps.
-
-### Model weights
-Download the four ensemble checkpoints from the GitHub **Releases** page into `best_model/`:
-- `ft__effb3_cls__aptos.pt`
-- `ft__effb3_reg__aptos.pt`
-- `inception_v3__aptos__5class__raw_384_s42.pt`
-- `tune__densenet169__focal__aptos.pt`
-
-## Grade new images
+### Grade new images
 ```bash
 uv run python scripts/predict.py path/to/fundus.jpg more_images/ --csv predictions.csv
 ```
@@ -143,40 +215,38 @@ For each image the output gives:
 - P(referable), with a REFER flag;
 - the five class probabilities.
 
-It applies the exact training pipeline: retina crop, each member's enhancement, and 4-flip TTA.
-
+It applies the exact training pipeline. It was checked to reproduce the evaluated test grades exactly (40/40).
 **Research use only. This is not a medical device.**
 
-## Reproduce from scratch
+### Walk through the whole project
 ```bash
-uv run python scripts/prepare_data.py --datasets idrid messidor2 aptos eyepacs   # cache, duplicate audit, splits
-bash scripts/run_queue.sh                                # 10 baselines (validation)
-bash scripts/tune_queue.sh && bash scripts/tune_round2.sh   # top-3 tuning (validation)
-bash scripts/run_eyepacs.sh                              # EyePACS pretraining
-bash scripts/run_best.sh                                 # APTOS fine-tunes + ensemble selection (validation)
-uv run python scripts/best_model.py --dataset aptos --final --external idrid messidor2   # ONE test evaluation
-uv run python scripts/best_report.py --dataset aptos --external idrid messidor2          # CIs, plots
-uv run python scripts/final_baselines.py                 # ONE test evaluation of the baselines
-uv run python scripts/compare_models.py --split test     # comparison table + plots
+uv run jupyter lab notebooks/DR_full_pipeline.ipynb
 ```
-The replication guide gives every command, including the feature-based RF/SVM models and the EyePACS →
-Messidor-2 evaluation.
+- By default the notebook reads the saved results and recomputes every analysis, which takes a few minutes.
+- Each training stage has a switch at the top (`RUN_BASELINES = True`, and so on) that re-runs it with the exact
+  project command.
 
-## Data protocol
-- **Splits:** 70/15/15, stratified, seed 42, and grouped:
-  - by patient for EyePACS;
-  - by exam for Messidor-2;
-  - by near-duplicate cluster for APTOS.
+### Reproduce from scratch (command line)
+```bash
+bash scripts/download_datasets.sh
+uv run python scripts/prepare_data.py --datasets idrid messidor2 aptos eyepacs   # cache, duplicate audit, splits
+bash scripts/run_queue.sh                                # Stage A: 10 baselines (validation)
+bash scripts/tune_queue.sh && bash scripts/tune_round2.sh   # Stage B: top-3 tuning (validation)
+bash scripts/run_eyepacs.sh                              # Stage D: EyePACS pretraining (first 4 runs)
+bash scripts/run_best.sh                                 # Stages E+F: fine-tunes + ensemble selection (validation)
+uv run python scripts/best_model.py --dataset aptos --final --external idrid messidor2   # Stage G: ONE test evaluation
+uv run python scripts/best_report.py --dataset aptos --external idrid messidor2
+uv run python scripts/final_baselines.py                 # Stage H: baselines on test
+uv run python scripts/compare_models.py --split test
+```
+See [`reports/replication_guide.md`](reports/replication_guide.md) for every command and the reason behind it.
 
-  IDRiD keeps its official test set.
-- **Duplicate audit:** green-channel high-pass correlation inside the retina, at a threshold of 0.99.
-  - Duplicates with conflicting grades were excluded (79 in APTOS, 4 in IDRiD).
-  - Same-grade copies were collapsed to one.
-- **No leakage:** test images were never used for training, tuning, model selection or threshold fitting.
+---
 
 ## Licence and data terms
-The datasets and their grades remain under
-their providers' terms:
+The datasets and their grades remain under their providers' terms:
 - APTOS and EyePACS: Kaggle competition rules.
 - IDRiD: CC BY 4.0.
 - Messidor-2: ADCIS licence.
+
+The trained weights were derived from APTOS and EyePACS and are shared for research use only.
