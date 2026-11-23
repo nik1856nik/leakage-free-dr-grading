@@ -29,7 +29,6 @@ paper/*.blg
 paper/*.bbl
 paper/*.out
 paper/*.synctex.gz
-paper/main_bw.pdf
 paper/dr_paper_overleaf.pdf
 paper/dr_paper_overleaf.zip
 

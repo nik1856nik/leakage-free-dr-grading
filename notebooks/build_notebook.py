@@ -773,7 +773,7 @@ md(r"""
 
 * `reports/final_report.md`: the complete results and discussion.
 * `reports/replication_guide.md`: every command, with the reasoning behind it.
-* `paper/main.pdf`: the IEEE-format paper. `paper/main(bw).pdf` is the black-and-white print copy.
+* `paper/main.pdf`: the IEEE-format paper.
 
 The figures and the PDF are rebuilt from the saved results:
 """)
